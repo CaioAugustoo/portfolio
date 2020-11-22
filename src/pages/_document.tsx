@@ -53,6 +53,7 @@ export default class MyDocument extends Document {
             property="og:title"
             content="Caio Augusto | Desenvolvedor Front-end"
           />
+          <meta name=" theme-color" content="#0185b2"></meta>
           <meta
             property="og:description"
             content="Desenvolvedor Front-end & UI/UX Designer."
