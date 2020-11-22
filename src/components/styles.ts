@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { theme } from '../style/theme/themes'
 
 // Import keyframes to animate
-import { fadeOut, fromBottom, fadeOutMobie } from '../style/keyframes/keyframes'
+import { fadeOut, fromBottom, fadeOutMobie, fadeOpacity, fromLeft } from '../style/keyframes/keyframes'
 
 export const Header = styled.header`
   width: 100%;
@@ -20,8 +20,14 @@ export const Header = styled.header`
   left: 0;
   top: 0;
 
+  background: ${theme.colors.white};
+
   animation: ${fadeOut} 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
   animation-delay: .1s;
+
+  img {
+    cursor: pointer;
+  }
 
   @media(max-width: ${theme.media.large}) {
     height: 6rem;
@@ -153,6 +159,9 @@ export const MobileWrapper = styled.div`
   transform: translate3d(-600px, 0, 0);
   opacity: 0;
 
+  background: ${theme.colors.white};
+  z-index: -1;
+
   @media(min-width: ${theme.media.small}) {
     display: none;
   }
@@ -195,3 +204,113 @@ export const MobileItem = styled.li`
   color: ${theme.colors.black};
   opacity: 0.8;
 `
+
+export const HomeSection = styled.section`
+  height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: -1;
+`;
+
+export const Welcome = styled.h2`
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: ${theme.colors.black};
+
+  display: block;
+  text-align: left;
+  margin-right: auto;
+
+  animation: ${fromLeft} .4s cubic-bezier(0.16, 1.13, 0.29, 1.37);
+
+  @media(max-width: ${theme.media.small}) {
+    font-size: 2rem;
+  }
+`;
+
+export const Name = styled.h1`
+  font-size: 6.5rem;
+  color: ${theme.colors.black};
+
+  animation: ${fromLeft} .45s cubic-bezier(0.16, 1.13, 0.29, 1.37);
+
+  margin: 10px auto 0px -3px;
+
+  @media(max-width: ${theme.media.small}) {
+    font-size: 3.7rem;
+  }
+`;
+
+export const About = styled.p`
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: ${theme.colors.black};
+
+  animation: ${fromBottom} 1s cubic-bezier(0.16, 1.13, 0.29, 1.37);
+
+  margin: 15px auto 0px 0px;
+
+  @media(max-width: ${theme.media.small}) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const Button = styled.button`
+  background: #0185b2;
+  a {
+    color: ${theme.colors.white};
+  }
+
+
+  height: 45px;
+ 
+  border: none;
+  border-radius: 100px;
+
+  margin-right: auto;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  opacity: 0;
+
+  padding: 0px 35px;
+  margin: 40px auto 0 0px;
+
+  animation: ${fadeOpacity} 1s ease forwards;
+
+  cursor: pointer;
+  transition: all .3s ease;
+
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.03);
+
+  &:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.07);
+    transform: translate3d(0px, -3px, 0px);
+  }
+
+  @media(max-width: ${theme.media.small}) {
+    height: 35px;
+    font-size: 1rem;
+    padding: 0px 25px;
+  }
+`;
+
+export const BackgroundImage = styled.img`
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+  animation: ${fadeOpacity} 2s ease;
+
+  @media(max-width: ${theme.media.large}) {
+    opacity: 0.1;
+    height: 100vh;
+    animation: none;
+  }
+`;
