@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { theme } from './themes'
 
 // Resets
 const GlobalStyles = createGlobalStyle`
@@ -13,6 +14,15 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: 'Montserrat', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  a { 
+    text-decoration: none;
+    color: ${theme.colors.purple}
   }
 `;
 export default GlobalStyles;
