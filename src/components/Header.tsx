@@ -67,14 +67,38 @@ const Header = () => {
 
         <S.MobileWrapper className={isMenuOpen ? "menu_active" : ""}>
           <S.MobileItens>
-            <S.MobileItem onClick={() => setIsMenuOpen(false)}>
-              SOBRE MIM
+            <S.MobileItem>
+              <Link
+                onClick={() => setIsMenuOpen(false)}
+                to="about"
+                spy={true}
+                smooth="easeInOutQuart"
+                duration={1000}
+              >
+                SOBRE MIM
+              </Link>
             </S.MobileItem>
-            <S.MobileItem onClick={() => setIsMenuOpen(false)}>
-              PORTFÓLIO
+            <S.MobileItem>
+              <Link
+                onClick={() => setIsMenuOpen(false)}
+                to="portfolio"
+                spy={true}
+                smooth="easeInOutQuart"
+                duration={1000}
+              >
+                PORTFOLIO
+              </Link>
             </S.MobileItem>
-            <S.MobileItem onClick={() => setIsMenuOpen(false)}>
-              CONTATO
+            <S.MobileItem>
+              <Link
+                onClick={() => setIsMenuOpen(false)}
+                to="contact"
+                spy={true}
+                smooth="easeInOutQuart"
+                duration={1000}
+              >
+                CONTATO
+              </Link>
             </S.MobileItem>
           </S.MobileItens>
         </S.MobileWrapper>
