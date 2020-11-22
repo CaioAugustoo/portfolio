@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
   }
   :root {
     font-size: 62.5%;
@@ -33,4 +33,8 @@ export const Container = styled.div`
   padding: 0 4rem;
   margin: 0 auto;
   width: 100%;
+
+  @media(max-width: ${theme.media.small}) {
+    padding: 0 2rem;
+  }
 `;
