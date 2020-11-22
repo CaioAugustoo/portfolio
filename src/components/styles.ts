@@ -55,16 +55,16 @@ export const NavItem = styled.li`
   font-size: 1.2rem;
   font-weight: 700;
 
-  transition: all .2s ease;
-
   color: ${theme.colors.black};
   opacity: 0.9;
 
-
+ a {
+  transition: all .2s ease;
   &:hover {
     color: ${theme.colors.blue};
     opacity: 0.9;
   }
+ }
 
   /* Animations for each item */
   &:first-child {
@@ -214,6 +214,8 @@ export const HomeSection = styled.section`
   flex-direction: column;
   justify-content: center;
 
+  padding: 0 2rem;
+
   z-index: -1;
 `;
 
@@ -312,5 +314,151 @@ export const BackgroundImage = styled.img`
     opacity: 0.1;
     height: 100vh;
     animation: none;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 2.5rem;
+  color: ${theme.colors.black};
+  text-align: center;
+
+  display: block;
+
+  &:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+
+    width: 5px;
+    height: 27px;
+
+    position: relative;
+    top: 29px;
+    z-index: -1;
+    left: -90px;
+
+    transform: rotate(-5deg);
+
+    background: ${theme.colors.blue};
+
+    @media(max-width: ${theme.media.small}) {
+      width: 4px;
+      height: 23px;
+      top: 24px;
+      left: -75px;
+    }
+  }
+
+  @media(max-width: ${theme.media.small}) {
+    font-size: 2rem;
+  }
+`;
+
+export const AboutSection = styled.section`
+  height: auto;
+  padding-top: 80px;
+`;
+
+export const AboutTexts = styled.p`
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: ${theme.colors.black};
+  text-align: center;
+
+  margin: 30px auto;
+  padding: 0 30px;
+
+  max-width: 1000px;
+
+  span {
+    color: #0185b2;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @media(max-width: ${theme.media.small}) {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+`;
+
+export const ScrollTop = styled.button`
+  background: #0185b2;
+
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  padding: 8px 9px;
+
+  border: none;
+  outline: none;
+  border-radius: 100px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  transition: all .4s ease;
+
+  &:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.1);
+    transform: translate3d(0px, -3px, 0px);
+  }
+`;
+
+export const ScrollDownArrow = styled.div`
+  position: absolute;
+  left: 50%;
+  bottom: 0.825rem;
+
+  display: flex;
+  margin-bottom: 1.25rem;
+
+  cursor: pointer;
+
+  img { 
+    width: 17px;
+  }
+`;
+
+export const StacksWrapper = styled.div`
+  padding: 0 30px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+export const StackItem = styled.div`
+  display: flex;
+  margin: 50px 10px 20px 10px;
+
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const Stacks = styled.p`
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: ${theme.colors.black};
+  text-align: center;
+  
+  max-width: 800px;
+
+  margin: 30px auto;
+  padding: 0 30px;
+
+  span {
+    color: #0185b2;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @media(max-width: ${theme.media.small}) {
+    padding: 0;
+    font-size: 1.4rem;
   }
 `;
