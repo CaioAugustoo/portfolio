@@ -13,7 +13,7 @@ const Header = () => {
     <S.Header>
       <Container>
         <S.ItensWrapper>
-          <Link to="home" spy={true} smooth="easeInOutQuart" duration={800}>
+          <Link to="home" spy={true} smooth="easeInOutQuart" duration={1000}>
             <Image
               src="/img/logo.svg"
               alt="Logo com as inicias 'C A'"
