@@ -46,3 +46,24 @@ export const fadeOutMobie = keyframes`
     opacity: 1;
   }
 `;
+
+export const fadeOpacity = keyframes`
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+  }
+`;
+
+export const fromLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translate3d(-150px, 0, 0);
+  } 
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+`;
