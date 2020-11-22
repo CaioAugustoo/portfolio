@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     font-size: 62.5%;
   }
-  body {
+  body, button {
     font-family: 'Montserrat', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
