@@ -4,10 +4,16 @@ import * as S from "./styles";
 import { Link } from "react-scroll";
 
 import { Container } from "../style/theme/global";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    isMenuOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "visible");
+  });
 
   return (
     <S.Header>
