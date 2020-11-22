@@ -165,15 +165,15 @@ export const MobileWrapper = styled.div`
       /* Animations for each item */
       &:first-child {
         animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both ;
-        animation-delay: .3s;
+        animation-delay: .4s;
       }
       &:nth-child(2) {
         animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both ;
-        animation-delay: .4s;
+        animation-delay: .5s;
       }
       &:last-child {
         animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both ;
-        animation-delay: .5s;
+        animation-delay: .6s;
       }
     }
   }
