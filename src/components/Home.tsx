@@ -1,5 +1,6 @@
 import Buttons from "./Buttons";
 import * as S from "./styles";
+import { Link } from "react-scroll";
 
 const HomeSection = () => {
   return (
@@ -13,7 +14,11 @@ const HomeSection = () => {
         Eu sou o <span>Caio.</span>
       </S.Name>
       <S.About>Desenvolvedor Front-end entusiasta</S.About>
-      <Buttons>SOBRE MIM</Buttons>
+      <Buttons>
+        <Link to="about" spy={true} smooth="easeInOutQuart" duration={1000}>
+          SOBRE MIM
+        </Link>
+      </Buttons>
     </S.HomeSection>
   );
 };
