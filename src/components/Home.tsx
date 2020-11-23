@@ -14,11 +14,15 @@ const HomeSection = () => {
         Eu sou o <span>Caio.</span>
       </S.Name>
       <S.About>Desenvolvedor Front-end entusiasta</S.About>
-      <Buttons>
-        <Link to="about" spy={true} smooth="easeInOutQuart" duration={1000}>
-          SOBRE MIM
-        </Link>
-      </Buttons>
+      <Link
+        style={{ marginRight: "auto" }}
+        to="about"
+        spy={true}
+        smooth="easeInOutQuart"
+        duration={1000}
+      >
+        <Buttons>SOBRE MIM</Buttons>
+      </Link>
     </S.HomeSection>
   );
 };
