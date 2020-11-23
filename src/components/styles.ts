@@ -274,10 +274,7 @@ export const About = styled.p`
 
 export const Button = styled.button`
   background: #0185b2;
-  a {
-    color: ${theme.colors.white};
-  }
-
+  color: ${theme.colors.white};
 
   height: 45px;
  
