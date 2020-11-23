@@ -14,7 +14,10 @@ const GlobalStyles = createGlobalStyle`
   }
   body, button {
     transition: all .3s ease;
-    font-family: 'Montserrat', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Montserrat', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body {
+    overflow-x: hidden !important;
   }
 
   ul li {
@@ -29,7 +32,8 @@ const GlobalStyles = createGlobalStyle`
   a, 
   h1, 
   p, 
-  h2 {
+  h2,
+  h3 {
     transition: all .3s ease;
   }
 
@@ -47,7 +51,8 @@ const GlobalStyles = createGlobalStyle`
     h1, 
     p, 
     li, 
-    h2 {
+    h2,
+    h3 {
       color: #ffffff;
     }
   }
