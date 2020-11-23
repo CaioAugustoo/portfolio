@@ -71,11 +71,11 @@ export const NavItem = styled.li`
  a {
   transition: all .2s ease;
   &:hover {
-    color: ${theme.colors.blue};
+    color: #0185b2;
     opacity: 0.9;
   }
   &.active {
-    color: ${theme.colors.blue};
+    color: #0185b2;
   }
  };
 
@@ -375,6 +375,7 @@ export const Title = styled.h2`
 
   @media(max-width: ${theme.media.small}) {
     font-size: 2rem;
+    margin-bottom: 40px;
   }
 `;
 
