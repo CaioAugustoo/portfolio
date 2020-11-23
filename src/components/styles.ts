@@ -190,7 +190,7 @@ export const MobileWrapper = styled.div`
         animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both ;
         animation-delay: .5s;
       }
-      &:last-child {
+      &:nth-child(3) {
         animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both ;
         animation-delay: .6s;
       }
@@ -213,6 +213,18 @@ export const MobileItem = styled.li`
 
   color: ${theme.colors.black};
   opacity: 0.8;
+
+  &:nth-child(4) {
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    
+    div {
+      right: 0;
+      position: initial;
+    }
+  }
 `
 
 export const HomeSection = styled.section`
