@@ -26,7 +26,10 @@ const GlobalStyles = createGlobalStyle`
     color: ${theme.colors.black}
   }
   
-  a, h1, p, li, h2 {
+  a, 
+  h1, 
+  p, 
+  h2 {
     transition: all .3s ease;
   }
 
@@ -34,11 +37,17 @@ const GlobalStyles = createGlobalStyle`
     transition: all .3s ease;
   }
 
-  body.dark-mode, body.dark-mode header, body.dark-mode .fSRHlq  {
+  body.dark-mode, 
+  body.dark-mode header, 
+  body.dark-mode #hmocIu  {
     background-color: #1a1919;
     color: #ffffff;
 
-    a, h1, p, li, h2 {
+    a, 
+    h1, 
+    p, 
+    li, 
+    h2 {
       color: #ffffff;
     }
   }

@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 
 import { Container } from "../style/theme/global";
 import { useEffect, useState } from "react";
+import DarkThemeButton from "./DarkThemeButton";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
             />
           </Link>
 
-          <nav>
+          <S.Nav>
             <S.NavItens className={isMenuOpen ? "menu_active" : ""}>
               <S.NavItem>
                 <Link
@@ -62,16 +63,19 @@ const Header = () => {
                   CONTATO
                 </Link>
               </S.NavItem>
+              <DarkThemeButton id="oi" />
             </S.NavItens>
-          </nav>
+          </S.Nav>
 
           <S.HambIcon
             className={isMenuOpen ? "menu_active" : ""}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           />
         </S.ItensWrapper>
-
-        <S.MobileWrapper className={isMenuOpen ? "menu_active" : ""}>
+        <S.MobileWrapper
+          id="hmocIu"
+          className={isMenuOpen ? "menu_active" : ""}
+        >
           <S.MobileItens>
             <S.MobileItem>
               <Link
