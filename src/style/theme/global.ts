@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
   body, button {
+    transition: all .3s ease;
     font-family: 'Montserrat', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
@@ -24,6 +25,24 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: ${theme.colors.black}
   }
+  
+  a, h1, p, li, h2 {
+    transition: all .3s ease;
+  }
+
+  header {
+    transition: all .3s ease;
+  }
+
+  body.dark-mode, body.dark-mode header, body.dark-mode .fSRHlq  {
+    background-color: #1a1919;
+    color: #ffffff;
+
+    a, h1, p, li, h2 {
+      color: #ffffff;
+    }
+  }
+  
 `;
 export default GlobalStyles;
 
