@@ -19,17 +19,16 @@ const PortfolioItems = () => {
     else setMedia(0);
   });
 
-  const moveItemToAnimateLikeAsSlide = event => {
+  const moveItemToAnimateLikeAsSlide = ({ clientX }) => {
     const windowWidth = window.innerWidth / 2;
-    if (event.target !== event.currentTarget) return false;
 
     if (windowWidth <= 513) return false;
     else if (active >= 0 && active <= 5) {
-      if (event.clientX > windowWidth) setActive(active + 1);
+      if (clientX > windowWidth) setActive(active + 1);
     }
 
     if (active >= 1 && active <= 6) {
-      if (event.clientX < windowWidth) setActive(active - 1);
+      if (clientX < windowWidth) setActive(active - 1);
     } else return true;
   };
 
