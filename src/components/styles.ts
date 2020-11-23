@@ -111,7 +111,7 @@ export const HambIcon = styled.button`
     content: '';
     display: block;
 
-    width: 2.1rem;
+    width: 2.0rem;
     height: 3px;
 
     transition: all .3s ease;
@@ -119,7 +119,7 @@ export const HambIcon = styled.button`
     background: ${theme.colors.blue};
     
     border-radius: 0.125rem;
-    box-shadow: 0 7px ${theme.colors.blue},0 -7px ${theme.colors.blue}
+    box-shadow: 0 6px ${theme.colors.blue},0 -6px ${theme.colors.blue}
   }
 
   &:before {
