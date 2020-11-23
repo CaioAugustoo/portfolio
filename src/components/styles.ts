@@ -246,7 +246,7 @@ export const Welcome = styled.h2`
 `;
 
 export const Name = styled.h1`
-  font-size: 6.5rem;
+  font-size: 8rem;
   color: ${theme.colors.black};
 
   animation: ${fromLeft} .45s cubic-bezier(0.16, 1.13, 0.29, 1.37);
@@ -259,7 +259,7 @@ export const Name = styled.h1`
 `;
 
 export const About = styled.p`
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 400;
   color: ${theme.colors.black};
 
