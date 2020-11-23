@@ -75,11 +75,29 @@ const About = () => {
       </S.AboutTexts>
 
       <S.AboutTexts>
+        Possuo uma <span>paixão enorme</span> por{" "}
+        <em>
+          <strong>ajudar pessoas </strong>
+        </em>
+        que estão iniciando e meu{" "}
+        <em>
+          <strong>maior hobby</strong>
+        </em>{" "}
+        é contribuir para projetos <span>open source</span>. Códigos, filmes,
+        videogame, músicas, podcast e <span>estudos</span> são assuntos que me
+        <em>
+          <strong> interessam</strong>
+        </em>
+        .
+      </S.AboutTexts>
+
+      <S.AboutTexts>
         <em>
           Atualmente <strong>trabalho</strong> com as seguintes{" "}
           <strong>tecnologias</strong>:
         </em>
       </S.AboutTexts>
+
       <S.Stacks>
         <span>
           SCSS, JavaScript, TypeScript, Babel, Webpack, ReactJS, React Native,
