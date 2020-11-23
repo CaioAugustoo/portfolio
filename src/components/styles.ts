@@ -74,6 +74,9 @@ export const NavItem = styled.li`
     color: ${theme.colors.blue};
     opacity: 0.9;
   }
+  &.active {
+    color: ${theme.colors.blue};
+  }
  };
 
   /* Animations for each item */
@@ -341,6 +344,8 @@ export const Title = styled.h2`
   color: ${theme.colors.black};
   text-align: center;
 
+  margin-bottom: 70px;
+
   display: block;
 
   &:before {
@@ -375,7 +380,7 @@ export const Title = styled.h2`
 
 export const AboutSection = styled.section`
   height: auto;
-  padding-top: 80px;
+  padding-top: 100px;
 `;
 
 export const AboutTexts = styled.p`
@@ -661,7 +666,7 @@ export const Span = styled.span`
 `;
 
 export const PortfolioItem = styled.div`
-  margin: 60px 0px;
+  margin: 30px 0px;
   opacity: 0.5;
   transition: all .3s ease;
 
