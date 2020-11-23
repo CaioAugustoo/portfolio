@@ -620,6 +620,7 @@ export const Span = styled.span`
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: rotate(-45deg) scale(0.87);
+  
   .crater {
     position: absolute;
     background-color: #e8cda5;
@@ -645,4 +646,120 @@ export const Span = styled.span`
     width: 8px;
     height: 8px;
   }
+`;
+
+export const PortfolioItem = styled.div`
+  margin: 60px 0px;
+  opacity: 0.5;
+  transition: all .3s ease;
+
+  @media(max-width: 1025px) {
+    opacity: 1;
+    margin: 20px 0px;
+  }
+
+  &.active {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+`;
+
+export const PortfolioItemWrapper = styled.div`
+  display: flex;
+  flex-shrink: 0;
+
+  transition: all .3s ease;
+
+  @media(max-width: 1025px) {
+    overflow: auto;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 30px;
+  }
+`;
+
+export const ItemAbout = styled.div`
+  max-width: 47.5rem;
+
+  padding: 2.5rem;
+  margin: 0 auto;
+
+  text-align: center;
+`;
+
+export const ItemTitle = styled.h3`
+  margin-bottom: 1.25rem;
+
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: ${theme.colors.black};
+
+
+  @media(max-width: 950px) {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+`;
+
+export const ItemDescription = styled.div`
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: ${theme.colors.black};
+
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+
+  @media(max-width: 950px) {
+    font-size: 1.2rem;
+  }
+`;
+
+export const ItemVisit = styled.div`
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+  margin: 30px 0px 0px 0px;
+
+  cursor: pointer;
+  transition: all .3s ease;
+
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: ${theme.colors.black};
+
+    &:hover {
+      color: ${theme.colors.blue};
+    }
+  }
+`;
+
+export const ItemImage = styled.img`
+  border-radius: 5px;
+  margin: 0 15px;
+
+  transition: all .3s ease;
+  
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05),0 4px 6px -2px rgba(0,0,0,0.05);
+
+  &:hover {
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+    transform: scale(1.02);
+  }
+
+  @media(max-width: 1024px) and (min-width: 300px) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+`;
+
+export const PortfolioSection = styled.section`
+  height: auto;
+  padding-top: 100px;
 `;
