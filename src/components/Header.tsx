@@ -110,6 +110,9 @@ const Header = () => {
                 CONTATO
               </Link>
             </S.MobileItem>
+            <S.MobileItem>
+              <DarkThemeButton id="ntmb" />
+            </S.MobileItem>
           </S.MobileItens>
         </S.MobileWrapper>
       </Container>
