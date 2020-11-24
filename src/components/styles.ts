@@ -667,7 +667,7 @@ export const Span = styled.span`
 `;
 
 export const PortfolioItem = styled.div`
-  margin: 30px 0px;
+  margin: 0px 0px;
   opacity: 0.5;
   transition: all .3s ease;
 
@@ -745,7 +745,7 @@ export const ItemVisit = styled.div`
   text-transform: uppercase;
 
   letter-spacing: 0.5px;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 58px 0px;
 
   cursor: pointer;
   transition: all .3s ease;
