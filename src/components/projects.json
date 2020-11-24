@@ -28,13 +28,6 @@
     "project_image": "https://i.gyazo.com/21a450b156c5f55ac159b57b4b9116e2.png"
   },
   {
-    "project_name": "Movie Library",
-    "project_description": "Este projeto consiste em uma biblioteca de filmes. A mesma mostra os filmes mais populares, mais bem avaliados e os que chegam em breve. Além disso, podemos pesquisar por qualquer filme. Os dados vem da api do TMDB. Feito com React.js.",
-    "project_url": "https://library-movie.netlify.app",
-    "project_git": "https://github.com/CaioAugustoo/movie_library",
-    "project_image": "https://i.gyazo.com/2b0a4abb4b2c80161ff1ef9f8bf1f9e7.jpg"
-  },
-  {
     "project_name": "PickPallet",
     "project_description": "Este projeto é um clone de ColorHunt. Ambas web app's possuem as mesmas intenções: reunir diversas paletas afim de ajudar designers e artistas. Qualquer usuário pode visualizar/criar qualquer paleta e copiar cada cor de cada paleta. É consumida uma API na qual eu desenvolvi. Realizado com React.js.",
     "project_url": "https://pickpallet.netlify.app",
