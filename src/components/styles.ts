@@ -727,7 +727,7 @@ export const ItemTitle = styled.h3`
 `;
 
 export const ItemDescription = styled.div`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.4rem;
   color: ${theme.colors.black};
 
