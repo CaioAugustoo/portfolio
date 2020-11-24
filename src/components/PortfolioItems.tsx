@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import Projects from "./projects.json";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const PortfolioItems = () => {
@@ -23,11 +24,11 @@ const PortfolioItems = () => {
     const windowWidth = window.innerWidth / 2;
 
     if (windowWidth <= 513) return false;
-    else if (active >= 0 && active <= 5) {
+    else if (active >= 0 && active <= 4) {
       if (clientX > windowWidth) setActive(active + 1);
     }
 
-    if (active >= 1 && active <= 6) {
+    if (active >= 1 && active <= 5) {
       if (clientX < windowWidth) setActive(active - 1);
     } else return true;
   };
