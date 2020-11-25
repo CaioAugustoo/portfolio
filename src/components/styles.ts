@@ -71,11 +71,11 @@ export const NavItem = styled.li`
  a {
   transition: all .2s ease;
   &:hover {
-    color: #0185b2;
+    color: ${theme.colors.primary};
     opacity: 0.9;
   }
   &.active {
-    color: #0185b2;
+    color: ${theme.colors.primary};
   }
  };
 
@@ -116,10 +116,10 @@ export const HambIcon = styled.button`
 
     transition: all .3s ease;
 
-    background: ${theme.colors.blue};
+    background: ${theme.colors.primary};
     
     border-radius: 0.125rem;
-    box-shadow: 0 6px ${theme.colors.blue},0 -6px ${theme.colors.blue}
+    box-shadow: 0 6px ${theme.colors.primary},0 -6px ${theme.colors.primary};
   }
 
   &:before {
@@ -131,10 +131,10 @@ export const HambIcon = styled.button`
 
     transition: all .3s ease;
 
-    background: ${theme.colors.blue};
+    background: ${theme.colors.primary};
     
     border-radius: 0.125rem;
-    box-shadow: 0 7px ${theme.colors.blue},0 -7px ${theme.colors.blue}
+    box-shadow: 0 7px ${theme.colors.primary},0 -7px ${theme.colors.primary};
   }
 
   @media(max-width: ${theme.media.small}) {
@@ -144,13 +144,13 @@ export const HambIcon = styled.button`
   &.menu_active {
     &:after {
       transform: rotate(45deg);
-      box-shadow: 0 0 0px ${theme.colors.blue};
+      box-shadow: 0 0 0px ${theme.colors.primary};
     }
     &:before {
       position: absolute;
       display: block;
       transform: rotate(-45deg);
-      box-shadow: 0 0 0 0px ${theme.colors.blue};
+      box-shadow: 0 0 0 0px ${theme.colors.primary};
     }
   }
 `;
@@ -288,7 +288,7 @@ export const About = styled.p`
 `;
 
 export const Button = styled.button`
-  background: #0185b2;
+  background: ${theme.colors.primary};
   color: ${theme.colors.white};
 
   height: 45px;
@@ -363,7 +363,7 @@ export const Title = styled.h2`
 
     transform: rotate(-5deg);
 
-    background: ${theme.colors.blue};
+    background: ${theme.colors.primary};
 
     @media(max-width: ${theme.media.small}) {
       width: 4px;
@@ -396,7 +396,7 @@ export const AboutTexts = styled.p`
   max-width: 1000px;
 
   span {
-    color: #0185b2;
+    color: ${theme.colors.primary};
     font-weight: 600;
     font-style: italic;
   }
@@ -408,7 +408,7 @@ export const AboutTexts = styled.p`
 `;
 
 export const ScrollTop = styled.button`
-  background: #0185b2;
+  background: ${theme.colors.primary};
 
   position: fixed;
   right: 15px;
@@ -477,7 +477,7 @@ export const Stacks = styled.p`
   padding: 0 30px;
 
   span {
-    color: #0185b2;
+    color: ${theme.colors.primary};
     font-weight: 600;
     font-style: italic;
   }
@@ -506,10 +506,10 @@ export const Input = styled.input`
   
   &:checked {
   + .toggle {
-    background-color: #0185b2;
+    background-color: ${theme.colors.primary};
   
     &:before {
-      color: #0185b2;
+      color: ${theme.colors.primary};
     }
     &:after {
       color: #ffffff;
@@ -563,7 +563,7 @@ export const Label = styled.label`
   position: relative;
   width: 90px;
   height: 45px;
-  background-color: #0185b2;
+  background-color: ${theme.colors.primary};
   border-radius: 90px;
   transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transform: scale(0.4);
@@ -757,7 +757,7 @@ export const ItemVisit = styled.div`
     color: ${theme.colors.black};
 
     &:hover {
-      color: ${theme.colors.blue};
+      color: ${theme.colors.primary};
     }
   }
 `;
