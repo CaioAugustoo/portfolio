@@ -34,7 +34,8 @@ const About = () => {
           {" "}
           <strong>eu tinha 5 anos </strong>
         </em>
-        de idade, quando eu utilizei a <span>primeira vez</span> um computador.
+        de idade, quando eu utilizei pela a <span>primeira vez</span> um
+        computador.
       </S.AboutTexts>
 
       <S.AboutTexts>
