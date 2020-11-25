@@ -4,7 +4,13 @@ import styled from 'styled-components';
 import { theme } from '../style/theme/themes'
 
 // Import keyframes to animate
-import { fadeOut, fromBottom, fadeOutMobie, fadeOpacity, fromLeft } from '../style/keyframes/keyframes'
+import { 
+  fadeOut, 
+  fromBottom, 
+  fadeOutMobie, 
+  fadeOpacity, 
+  fromLeft 
+} from '../style/keyframes/keyframes'
 
 export const Header = styled.header`
   width: 100%;
