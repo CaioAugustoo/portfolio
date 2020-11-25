@@ -3,7 +3,7 @@ import * as S from "./styles";
 
 const DarkThemeButton = ({ id }) => {
   const darkMode = useDarkMode(false);
-
+  console.log(typeof id);
   return (
     <S.ButtonDarkTheme>
       <S.Input

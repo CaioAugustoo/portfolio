@@ -1,9 +1,9 @@
 import * as S from "./styles";
 import Projects from "./projects.json";
-import Image from "next/image";
+import { FC } from "react";
 import { useEffect, useRef, useState } from "react";
 
-const PortfolioItems = () => {
+const PortfolioItems: FC = () => {
   const [position, setPosition] = useState(0);
   const [active, setActive] = useState(0);
   const projectRef = useRef(null);

@@ -1,7 +1,8 @@
 import * as S from "./styles";
 import { Link } from "react-scroll";
+import { FC } from "react";
 
-const ScrollDown = () => {
+const ScrollDown: FC = () => {
   return (
     <S.ScrollDownArrow>
       <Link to="about" spy={true} smooth="easeInOutQuart" duration={1000}>

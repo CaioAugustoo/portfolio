@@ -1,6 +1,7 @@
 import * as S from "./styles";
+import { FC } from "react";
 
-const Buttons = ({ children }) => {
+const Buttons: FC = ({ children }) => {
   return <S.Button>{children}</S.Button>;
 };
 

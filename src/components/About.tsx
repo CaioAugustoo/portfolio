@@ -1,9 +1,9 @@
-import Buttons from "./Buttons";
+import { FC } from "react";
 import * as S from "./styles";
 
 import Titles from "./Titles";
 
-const About = () => {
+const About: FC = () => {
   return (
     <S.AboutSection id="about">
       <Titles>SOBRE MIM</Titles>

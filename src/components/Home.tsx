@@ -1,8 +1,9 @@
 import Buttons from "./Buttons";
 import * as S from "./styles";
 import { Link } from "react-scroll";
+import { FC } from "react";
 
-const HomeSection = () => {
+const HomeSection: FC = () => {
   return (
     <S.HomeSection id="home">
       <S.BackgroundImage

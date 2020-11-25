@@ -1,13 +1,13 @@
 import Image from "next/image";
 import * as S from "./styles";
-
+import { FC } from "react";
 import { Link } from "react-scroll";
 
 import { Container } from "../style/theme/global";
 import { useEffect, useState } from "react";
 import DarkThemeButton from "./DarkThemeButton";
 
-const Header = () => {
+const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
