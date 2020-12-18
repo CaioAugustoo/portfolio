@@ -1,4 +1,4 @@
-import  Container  from "../../styles/globals";
+import { Container } from "../../styles/globals";
 import * as S from "./styles";
 
 import Titles from "../Titles/index";
