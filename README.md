@@ -1,30 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Portfólio
+Portfólio desenvolvido com NextJS e TypeScript.
 
-## Getting Started
+## ℹ️ Sobre o projeto 
+Este projeto consiste em mostrar meus recentes e futuros trabalhos realizados ao decorrer da minha carreira.
 
-First, run the development server:
+Este projeto conta, como "feature", com um modo-light/modo-escuro para uma melhor visualização. Após alternar entre os temas, o tema ficará salvo no localstorage do seu navegador, sendo assim, quando você sair ou fechar a página, a preferência pelo tema ficará salvo, sem a necessidade de ficar habilitando manualmente.
+
+
+## ✨ Demonstração
+Veja abaixo uma foto do projeto.
+[![Image from Gyazo](https://i.gyazo.com/4fd5b5940c68d61535029eb8ec8035fd.png)](https://gyazo.com/4fd5b5940c68d61535029eb8ec8035fd)
+
+Você pode conferir o resultado final em: https://caiohtml.com
+
+## 🎯 Objetivo do projeto
+Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos com NextJS. Foi reforçado, também, os conhecimentos com TypeScript.
+
+## 📝 Tecnologias 
+Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens: 
+
+- [React](https://pt-br.reactjs.org/)
+- [NextJS](https://nextjs.org/) 
+- [Styled components](https://styled-components.com)
+- [react-scroll](https://www.npmjs.com/package/react-scroll)
+- [Jest](https://jestjs.io/)
+- [StoryBook](https://storybook.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## ⚙️ Instalação
+Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone o repositório em alguma pasta em sua máquina
+$ git clone https://github.com/CaioAugustoo/portfolio_nextjs
+
+# Entre no repositório
+$ cd portfolio_nextjs
+
+Instale as dependencias digitando no termimal:
+$ yarn install
+
+Rode a aplicação no modo de desenvolvimento.
+$ yarn start
+
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+Copyright © 2020 Caio Augusto.
