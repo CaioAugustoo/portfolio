@@ -13,8 +13,8 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
     const scrollDownMakeProjectsAppear = () => {
       const valueScrolledByUser = window.scrollY;
       const pageTotalHeight = document.body.offsetHeight - window.innerHeight;
-      if (valueScrolledByUser > pageTotalHeight * 0.31)
-        // scrolled 31% of page
+      if (valueScrolledByUser > pageTotalHeight * 0.15)
+        // scrolled 15% of page
         SetScrolledToProjects(true);
       else SetScrolledToProjects(false);
     };
