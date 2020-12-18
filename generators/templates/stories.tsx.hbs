@@ -1,0 +1,10 @@
+import {{pascalCase name}} from ".";
+import { Story, Meta } from "@storybook/react/types-6-0";
+
+export default {
+title: "{{pascalCase name}}",
+component: {{pascalCase name}},
+} as Meta;
+
+export const Basic: Story = (args) =>
+<{{pascalCase name}} {...args} />;
