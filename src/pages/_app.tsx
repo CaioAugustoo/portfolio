@@ -19,6 +19,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           name="description"
           content="Desenvolvedor Front-end & UI/UX Designer."
         />
+        <meta name="google-site-verification" content="u6Vdueaj4zUT5QC9kQe57N0BopUpzrTN9HxiHTOZIBo" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://caiohtml.com/" />
         <meta
