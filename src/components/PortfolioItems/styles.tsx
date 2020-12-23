@@ -65,7 +65,7 @@ export const WorkItemButton = styled.div`
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+
   cursor: pointer;
   transition: color 0.3s ease;
   a {
@@ -81,7 +81,6 @@ export const WorkItemButton = styled.div`
     font-size: 1.4rem;
     letter-spacing: 0.5px;
     justify-content: space-around;
-    flex-direction: row;
   }
 `;
 
