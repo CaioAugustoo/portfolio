@@ -93,5 +93,6 @@ export const WorkItemImage = styled.img`
   border-bottom-right-radius: 5px;
   @media (max-width: ${theme.media.large}) {
     margin-left: 0px;
+    border-radius: 5px;
   }
 `;
