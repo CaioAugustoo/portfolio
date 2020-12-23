@@ -51,11 +51,11 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
                 {project_description}
               </S.WorkItemDescription>
               <S.WorkItemButton>
-                <a href={project_git} target="_blank" rel="noopener noreferrer">
-                  Código fonte
-                </a>
                 <a href={project_url} target="_blank" rel="noopener noreferrer">
                   Visitar <span>→</span>
+                </a>
+                <a href={project_git} target="_blank" rel="noopener noreferrer">
+                  Código fonte
                 </a>
               </S.WorkItemButton>
             </S.WorkItemAbout>
