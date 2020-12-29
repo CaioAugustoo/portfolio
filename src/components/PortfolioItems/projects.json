@@ -1,7 +1,7 @@
 [
   {
     "project_name": "Dogs",
-    "project_description": "Este projeto consiste em uma rede social inspirada no Instagram, feita especialmente para cachorros. Consome uma api e retorna os dados. Podemos efetuar login, registrar como novo usuário, postar uma nova foto, apagar fotos, recuperar senhas, etc. tudo através de uma API. Desenvolvida com React.js.",
+    "project_description": "Este projeto consiste em uma rede social inspirada no Instagram, feita especialmente para cachorros. Consome uma API e retorna os dados. Podemos efetuar login, registrar como novo usuário, postar uma nova foto, apagar fotos, recuperar senhas, etc. tudo através de uma API. Desenvolvida com React.js.",
     "project_url": "https://dogsreact.netlify.app",
     "project_git": "https://github.com/CaioAugustoo/dogs",
     "project_image": "https://i.gyazo.com/69b06e4c38c3e07eb066ac6f0906b1b1.jpg"
