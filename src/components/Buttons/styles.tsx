@@ -1,13 +1,11 @@
-import styled from "styled-components";
-
-// Import colors
-import { theme } from "../../styles/theme/theme";
+import styled, { css } from "styled-components";
 
 // Import keyframes to animate
 import { fadeOpacity } from "../../styles/keyframes/keyframes";
 
 export const Button = styled.button`
-  background: ${theme.colors.primary};
+${({theme}) => css`
+background: ${theme.colors.primary};
   color: ${theme.colors.white};
 
   height: 45px;
@@ -16,8 +14,8 @@ export const Button = styled.button`
   border-radius: 100px;
   margin-right: auto;
 
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: ${theme.font.sizes.xxsmallx2};
+  font-weight: ${theme.font.medium};
   letter-spacing: 1px;
 
   opacity: 0;
@@ -39,7 +37,9 @@ export const Button = styled.button`
   }
   @media (max-width: ${theme.media.small}) {
     height: 35px;
-    font-size: 1rem;
+    font-size: ${theme.font.sizes.xxsmall};
     padding: 0px 25px;
   }
+`}
+
 `;
