@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { theme } from "../../styles/theme/theme";
-
 export const ScrollTop = styled.button`
   background: ${theme.colors.primary};
   position: fixed;
