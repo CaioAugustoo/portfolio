@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-import { theme } from "../../styles/theme/theme";
+import styled, { css } from "styled-components";
 
 export const ContactSection = styled.section`
   height: auto;
@@ -12,16 +10,18 @@ export const ContactSection = styled.section`
 `;
 
 export const ContactText = styled.p`
-  font-size: 1.7rem;
-  text-align: center;
-  line-height: 1.5;
-  span,
-  a {
-    color: ${theme.colors.secondary} !important;
-  }
-  @media (max-width: ${theme.media.small}) {
-    font-size: 1.5rem;
-  }
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.small};
+    text-align: center;
+    line-height: 1.5;
+    span,
+    a {
+      color: ${theme.colors.secondary} !important;
+    }
+    @media (max-width: ${theme.media.small}) {
+      font-size: ${theme.font.sizes.xsmallx2};
+    }
+  `}
 `;
 
 export const ContactLinks = styled.div`
