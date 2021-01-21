@@ -3,11 +3,13 @@ import { Container } from "../../styles/globals";
 import * as S from "./styles";
 
 const Footer = () => {
+  const currentDate = new Date();
+  
   return (
     <S.Footer>
       <Container>
         <S.Rights>
-          © 2020 - Caio Augusto <br />
+          © ${currentDate.getFullYear()} - Caio Augusto <br />
           Alguns direitos reservados.
         </S.Rights>
       </Container>
