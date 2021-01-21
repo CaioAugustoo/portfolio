@@ -9,7 +9,7 @@ const Footer = () => {
     <S.Footer>
       <Container>
         <S.Rights>
-          © ${currentDate.getFullYear()} - Caio Augusto <br />
+          © {currentDate.getFullYear()} - Caio Augusto <br />
           Alguns direitos reservados.
         </S.Rights>
       </Container>
