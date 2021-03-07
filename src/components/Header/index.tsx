@@ -1,17 +1,15 @@
-import * as S from "./styles";
 import { Link } from "react-scroll";
+import * as S from "./styles";
 
 import { Container } from "../../styles/globals";
 import { useEffect, useState } from "react";
 
 import DarkThemeButton from "../Darkthemebutton/index";
 
-import React from "react";
-
 const Header = ({
-  firstItem = "SOBRE MIM",
-  secondItem = "PORTFÓLIO",
-  thirdItem = "CONTATO",
+  firstItem = "Sobre Mim",
+  secondItem = "Portfólio",
+  thirdItem = "Contato",
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

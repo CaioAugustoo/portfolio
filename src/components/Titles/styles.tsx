@@ -8,6 +8,7 @@ export const Title = styled.h2`
 
     margin-bottom: 70px;
     display: block;
+    text-transform: uppercase;
 
     &:before {
       content: "";

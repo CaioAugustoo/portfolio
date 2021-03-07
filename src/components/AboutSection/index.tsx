@@ -4,13 +4,16 @@ import * as S from "./styles";
 import Titles from "../Titles/index";
 
 const AboutSection = () => {
+  const myCurrentAge = new Date().getFullYear() - 2003;
+
   return (
     <S.AboutSection id="about">
       <Container>
-        <Titles>SOBRE MIM</Titles>
+        <Titles>Sobre Mim</Titles>
 
         <S.AboutTexts>
-          Meu nome é <span>Caio Augusto</span>, tenho 17 anos , moro no{" "}
+          Meu nome é <span>Caio Augusto</span>, tenho {myCurrentAge} anos , moro
+          no{" "}
           <em>
             <strong>Brasil</strong>
           </em>
@@ -92,9 +95,8 @@ const AboutSection = () => {
 
         <S.Stacks>
           <span>
-            HTML, CSS, SCSS, Bootstrap, JavaScript, TypeScript, Babel, Webpack,
-            ReactJS, styled-components, Redux, Firebase, NextJS, Strapi, Apollo,
-            GraphQL, Jest, RTL, StoryBook, Cypress
+            SCSS, JavaScript, TypeScript, React.js, Redux, Firebase, Next.js,
+            Strapi, Apollo, GraphQL, Jest, StoryBook, Cypress
           </span>
         </S.Stacks>
       </Container>

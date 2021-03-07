@@ -32,6 +32,23 @@ export const fromBottom = keyframes`
   }
 `;
 
+export const mobileItens = keyframes`
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0px);
+    opacity: 1;
+  } 70% {
+    transform: translateX(-3px);
+    opacity: 1;
+  } 100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+`;
+
 export const fadeOutMobie = keyframes`
   0% {
     height: 2rem;
@@ -50,7 +67,7 @@ export const fadeOutMobie = keyframes`
 export const fadeOpacity = keyframes`
   0% {
     opacity: 0;
-  } 
+  }
   100% {
     opacity: 1;
   }
@@ -60,12 +77,12 @@ export const fromLeft = keyframes`
   0% {
     opacity: 0;
     transform: translate3d(-150px, 0, 0);
-  } 
+  }
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-  
+
 `;
 
 export const appears = keyframes`

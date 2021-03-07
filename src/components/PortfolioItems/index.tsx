@@ -1,32 +1,12 @@
-import React, { useEffect, useState, FC } from "react";
+import { FC } from "react";
 import * as S from "./styles";
 import { Container } from "../../styles/globals";
+
 import { PortfolioItemsProps } from "types/types";
 
 import projects from "./projects.json";
 
 const PortfolioItems: FC<PortfolioItemsProps> = () => {
-  const [scrolledToProjects, SetScrolledToProjects] = useState(false);
-
-  // Animate on scroll like "AOS" lib
-  useEffect(() => {
-    const scrollDownMakeProjectsAppear = () => {
-      const valueScrolledByUser = window.scrollY;
-      const pageTotalHeight = document.body.offsetHeight - window.innerHeight;
-      if (valueScrolledByUser > pageTotalHeight * 0.31)
-        // scrolled 31% of page
-        SetScrolledToProjects(true);
-      else SetScrolledToProjects(false);
-    };
-    window.addEventListener("scroll", scrollDownMakeProjectsAppear);
-    window.addEventListener("whell", scrollDownMakeProjectsAppear);
-
-    return () => {
-      window.removeEventListener("scroll", scrollDownMakeProjectsAppear);
-      window.removeEventListener("wheel", scrollDownMakeProjectsAppear);
-    };
-  }, [scrolledToProjects]);
-
   return (
     <Container>
       {projects?.map(
@@ -42,7 +22,6 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
         ) => (
           <S.WorkItem
             key={index}
-            className={scrolledToProjects ? "scrolled" : "unscrolled"}
             style={{ animationDelay: `${index * 100}ms` }}
           >
             <S.WorkItemAbout>

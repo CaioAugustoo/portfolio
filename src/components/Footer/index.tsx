@@ -1,10 +1,9 @@
-import React from "react";
 import { Container } from "../../styles/globals";
 import * as S from "./styles";
 
 const Footer = () => {
   const currentDate = new Date();
-  
+
   return (
     <S.Footer>
       <Container>

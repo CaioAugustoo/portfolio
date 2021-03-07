@@ -23,18 +23,3 @@ export const ContactText = styled.p`
     }
   `}
 `;
-
-export const ContactLinks = styled.div`
-  margin: 50px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-`;
