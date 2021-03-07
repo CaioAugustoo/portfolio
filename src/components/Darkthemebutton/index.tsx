@@ -1,6 +1,6 @@
 import useDarkMode from "use-dark-mode";
-import React from "react";
 import * as S from "./styles";
+
 import { ButtonDarkModeProps } from "types/types";
 
 const DarkThemeButton = ({ id }: ButtonDarkModeProps) => {

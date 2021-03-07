@@ -34,13 +34,8 @@ export const WorkItem = styled.div`
         box-shadow: none;
       }
     }
-    &.scrolled {
-      animation: ${appears} 0.5s ease backwards;
-    }
-    &.unscrolled {
-      opacity: 0;
-      transform: translateY(100px);
-    }
+    transform: translateY(100px);
+    opacity: 0;
   `}
 `;
 

@@ -17,6 +17,7 @@ export const Button = styled.button`
     font-size: ${theme.font.sizes.xxsmallx2};
     font-weight: ${theme.font.medium};
     letter-spacing: 1px;
+    text-transform: uppercase;
 
     opacity: 0;
     padding: 0px 35px;

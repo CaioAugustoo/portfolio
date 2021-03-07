@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import * as S from "./styles";
 import { Link } from "react-scroll";
+
+import * as S from "./styles";
+
 const ScrollTop = () => {
   const [scrolled, setScrolled] = useState(false);
 

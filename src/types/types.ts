@@ -32,3 +32,7 @@ export type PortfolioItems = {
 export type PortfolioItemsProps = {
   projects?: PortfolioItems[]
 }
+
+export type IntersectionObserverEntry = {
+  isIntersecting: boolean;
+};

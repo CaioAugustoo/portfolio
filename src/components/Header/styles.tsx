@@ -5,6 +5,7 @@ import {
   fadeOut,
   fromBottom,
   fadeOutMobie,
+  mobileItens,
 } from "../../styles/keyframes/keyframes";
 
 export const Header = styled.header`
@@ -73,6 +74,8 @@ export const NavItem = styled.li`
 
     color: ${theme.colors.black};
     opacity: 0.9;
+
+    text-transform: uppercase;
 
     a {
       transition: all 0.2s ease;
@@ -193,17 +196,17 @@ export const MobileWrapper = styled.div`
       ul li {
         /* Animations for each item */
         &:first-child {
-          animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+          animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
             both;
           animation-delay: 0.4s;
         }
         &:nth-child(2) {
-          animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+          animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
             both;
           animation-delay: 0.5s;
         }
         &:nth-child(3) {
-          animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+          animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
             both;
           animation-delay: 0.6s;
         }
@@ -225,6 +228,7 @@ export const MobileItem = styled.li`
     font-weight: ${theme.font.bold};
 
     color: ${theme.colors.black};
+    text-transform: uppercase;
     opacity: 0.8;
 
     &:nth-child(4) {

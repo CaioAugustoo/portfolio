@@ -66,6 +66,7 @@ export const Container = styled.div`
     padding: 0 4rem;
     margin: 0 auto;
     width: 100%;
+
     @media (max-width: ${theme.media.small}) {
       padding: 0 2rem;
     }

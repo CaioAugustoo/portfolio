@@ -1,9 +1,10 @@
 import Buttons from "../Buttons/index";
-import * as S from "./styles";
-import { Link } from "react-scroll";
-import React from "react";
+
 import { Container } from "../../styles/globals";
 import ScrollDown from "../ScrollDown/index";
+
+import * as S from "./styles";
+import { Link } from "react-scroll";
 
 const HomeSection = () => {
   return (
@@ -23,14 +24,8 @@ const HomeSection = () => {
           </S.Name>
           <S.About>Desenvolvedor Front-end entusiasta</S.About>
 
-          <Link
-            style={{ marginRight: "auto" }}
-            to="about"
-            spy={true}
-            smooth="easeInOutQuart"
-            duration={1000}
-          >
-            <Buttons>SOBRE MIM</Buttons>
+          <Link to="about" spy={true} smooth="easeInOutQuart" duration={1000}>
+            <Buttons>Sobre Mim</Buttons>
           </Link>
         </S.ItemsHomeWrapper>
         <ScrollDown />
