@@ -30,7 +30,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scroll": "^1.8.1",
-    "styled-components": "^5.2.1",
+    "styled-components": "^5.2.2",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
