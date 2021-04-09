@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const duration = 1000
 
   useEffect(() => {
     isMenuOpen
@@ -17,7 +18,7 @@ const Header = () => {
     <S.Header>
       <Container>
         <S.ItemsWrapper>
-          <Link to="home" spy={true} smooth="easeInOutQuart" duration={1000}>
+          <Link to="home" spy={true} smooth="easeInOutQuart" duration={duration}>
             <img
               src="/img/logo.svg"
               alt="Logo com as inicias 'C A'"
@@ -33,7 +34,8 @@ const Header = () => {
                   to="about"
                   spy={true}
                   smooth="easeInOutQuart"
-                  duration={1000}
+                  duration={duration}
+                  activeClass="active"
                 >
                   About
                 </Link>
@@ -43,9 +45,21 @@ const Header = () => {
                   to="portfolio"
                   spy={true}
                   smooth="easeInOutQuart"
-                  duration={1000}
+                  duration={duration}
+                  activeClass="active"
                 >
                   Portfolio
+                </Link>
+              </S.NavItem>
+              <S.NavItem>
+                <Link
+                  to="blog"
+                  spy={true}
+                  smooth="easeInOutQuart"
+                  duration={duration}
+                  activeClass="active"
+                >
+                  Blog
                 </Link>
               </S.NavItem>
               <S.NavItem>
@@ -53,7 +67,8 @@ const Header = () => {
                   to="contact"
                   spy={true}
                   smooth="easeInOutQuart"
-                  duration={1000}
+                  duration={duration}
+                  activeClass="active"
                 >
                   Contact
                 </Link>
@@ -77,7 +92,7 @@ const Header = () => {
                 to="about"
                 spy={true}
                 smooth="easeInOutQuart"
-                duration={1000}
+                duration={duration}
               >
                 About
               </Link>
@@ -88,9 +103,20 @@ const Header = () => {
                 to="portfolio"
                 spy={true}
                 smooth="easeInOutQuart"
-                duration={1000}
+                duration={duration}
               >
                 Portfolio
+              </Link>
+            </S.MobileItem>
+            <S.MobileItem>
+              <Link
+                onClick={() => setIsMenuOpen(false)}
+                to="blog"
+                spy={true}
+                smooth="easeInOutQuart"
+                duration={duration}
+              >
+                Blog
               </Link>
             </S.MobileItem>
             <S.MobileItem>
@@ -99,7 +125,7 @@ const Header = () => {
                 to="contact"
                 spy={true}
                 smooth="easeInOutQuart"
-                duration={1000}
+                duration={duration}
               >
                 Contact
               </Link>

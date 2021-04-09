@@ -8,7 +8,7 @@ import {
 export const Header = styled.header`
   ${({ theme }) => css`
     width: 100%;
-    height: 7rem;
+    height: 8rem;
 
     display: flex;
     align-items: center;
@@ -25,6 +25,10 @@ export const Header = styled.header`
     img {
       cursor: pointer;
     }
+
+    @media(max-width: ${theme.media.md}) {
+      height: 6.5rem;
+    }
   `}
 `;
 
@@ -40,7 +44,6 @@ export const ItemsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
 `;
 
 export const NavItens = styled.ul`
@@ -62,9 +65,23 @@ export const NavItem = styled.li`
     a {
       transition: all 0.2s ease;
 
+        &::after {
+          transition: all .3s ease;
+          content: '';
+          display: block;
+          position: absolute;
+          height: 4px;
+          width: 0%;
+          background-color: ${theme.colors.secondary};
+          bottom: -27px;
+        }
+
       &:hover {
         color: ${theme.colors.primary};
-        opacity: 0.9;
+      }
+
+      &.active, &.active::after {
+        width: 100%;
       }
     }
     /* Animations for each item */
@@ -79,6 +96,10 @@ export const NavItem = styled.li`
     &:nth-child(3) {
       animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
       animation-delay: 0.4s;
+    }
+    &:nth-child(4) {
+      animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+      animation-delay: 0.5s;
     }
   `}
 `;
@@ -189,6 +210,11 @@ export const MobileWrapper = styled.div`
           animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
             both;
           animation-delay: 0.6s;
+        }
+        &:nth-child(4) {
+          animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+            both;
+          animation-delay: 0.7s;
         }
       }
     }
