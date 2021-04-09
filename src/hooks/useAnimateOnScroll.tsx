@@ -1,13 +1,14 @@
 import { useEffect, useRef } from "react";
 
 const useAnimateOnScroll = () => {
-  const elementRef = useRef<HTMLElement>(null!);
+  const elementRef = useRef<HTMLHeadingElement>(null!);
 
   useEffect(() => {
     function handleMutation([entry]: IntersectionObserverEntry[]) {
       if (entry.isIntersecting) {
         elementRef.current.classList.add('active');
-        observer.disconnect();
+      } else {
+        elementRef.current.classList.remove('active');
       }
     }
     const options = {
