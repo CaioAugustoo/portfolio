@@ -1,26 +1,22 @@
 import styled, { css } from "styled-components";
 
-import {
-  fromBottom
-} from "styles/keyframes/keyframes";
+import { fromBottom } from "styles/keyframes/keyframes";
 
 export const HomeSection = styled.section`
-  ${({ theme }) => css`
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-    padding: 0 2rem;
-    z-index: -1;
+  padding: 0 2rem;
+  z-index: -1;
 
-    button {
-      animation: ${fromBottom} 0.85s ease;
-    }
-  `}
+  button {
+    animation: ${fromBottom} 0.85s ease;
+  }
 `;
 
 export const ItemsHomeWrapper = styled.div`
@@ -28,26 +24,29 @@ export const ItemsHomeWrapper = styled.div`
     margin: 0 auto;
     padding: 0 4rem;
 
-    @media(max-width: ${theme.media.sm}) {
+    @media (max-width: ${theme.media.sm}) {
       padding: 0 1.5rem;
     }
   `}
 `;
 
-export const Welcome = styled.h2`
+export const Welcome = styled.div`
   ${({ theme }) => css`
-    font-size:${theme.font.sizes.xsmallx2};
-    font-weight: ${theme.font.medium};
+    h2 {
+      font-size: ${theme.font.sizes.xsmallx2};
+      font-weight: ${theme.font.medium};
 
-    display: block;
-    text-align: left;
-
-    margin-right: auto;
-    animation: ${fromBottom} 0.5s ease;
-
-    @media(max-width: ${theme.media.sm}) {
-      font-size: ${theme.font.sizes.xxsmallx2};
+      @media (max-width: ${theme.media.sm}) {
+        font-size: ${theme.font.sizes.xxsmallx2};
+      }
     }
+
+    svg {
+      margin-left: 10px;
+    }
+
+    display: flex;
+    animation: ${fromBottom} 0.5s ease;
   `}
 `;
 
@@ -60,11 +59,11 @@ export const Name = styled.h1`
 
     margin: 10px auto 0px -3px;
 
-    @media(max-width: ${theme.media.md}) {
+    @media (max-width: ${theme.media.md}) {
       font-size: ${theme.font.sizes.smallx2};
     }
 
-    @media(max-width: ${theme.media.sm}) {
+    @media (max-width: ${theme.media.sm}) {
       font-size: ${theme.font.sizes.small};
       line-height: 1.4;
     }
@@ -80,11 +79,11 @@ export const About = styled.p`
 
     margin: 20px auto 35px 0px;
 
-    @media(max-width: ${theme.media.md}) {
+    @media (max-width: ${theme.media.md}) {
       font-size: ${theme.font.sizes.xxsmall};
     }
 
-    @media(max-width: ${theme.media.sm}) {
+    @media (max-width: ${theme.media.sm}) {
       font-size: ${theme.font.sizes.xxxsmall};
     }
   `}

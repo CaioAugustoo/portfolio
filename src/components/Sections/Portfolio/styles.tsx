@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { appears } from "styles/keyframes/keyframes";
+import { fromBottom } from "styles/keyframes/keyframes";
 
-export const PortfolioSection = styled.section`
+export const Wrapper = styled.section`
   height: auto;
-  padding-top: 100px;
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 10rem 4rem;
 
   &.active > div > * {
-    animation: ${appears} 0.5s ease backwards;
-    transform: translateY(0);
-    opacity: 1;
+    animation: ${fromBottom} .5s ease;
   }
 `;

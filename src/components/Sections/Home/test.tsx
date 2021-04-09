@@ -1,17 +1,18 @@
-import { render, screen } from "@testing-library/react";
+import {  screen } from "@testing-library/react";
+import { renderWithTheme } from "utils/tests/helpers";
 
-import Main from "./index";
+import Home from ".";
 
 describe("<Main />", () => {
-  it("should render the heading", () => {
-    render(<Main />);
+  it("should render the home", () => {
+    renderWithTheme(<Home />);
 
-    expect(screen.getByText(/Eaí!✌🏼/i)).toBeInTheDocument();
+    expect(screen.getByText(/Hello!/i)).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /Eu sou o Caio./i })
+      screen.getByRole("heading", { name: /I am Caio Augusto./i })
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/Desenvolvedor Front-end entusiasta/i)
+      screen.getByRole("heading", { name: /I create things for the web../i })
     ).toBeInTheDocument();
   });
 });

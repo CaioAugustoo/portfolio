@@ -6,33 +6,47 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <S.HomeSection id="home">
-        <S.ItemsHomeWrapper>
-          <S.Welcome>
-            <span role="img" aria-label="emoji de mão com dois dedos">
-              Hello!{" "}
-              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                <path d="M0 30.1H30V0.0999998H0V30.1Z" fill="url(#pattern0)" />
-                <defs>
-                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlinkHref="#image0" transform="scale(0.015625)" />
-                  </pattern>
-                  <image id="image0" width="64" height="64" xlinkHref="data:image/png;base64,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" />
-                </defs>
-              </svg>
-
-            </span>
-          </S.Welcome>
-          <S.Name>
-            I am Caio Augusto. <br />I create things for the web.
-          </S.Name>
-          <S.About>
-            Front-end developer <s>and designer</s> based in Brazil. <br />I
-            always try to write clean code and I value accessibility.
-          </S.About>
-          <Link to="portfolio" spy={true} smooth="easeInOutQuart" duration={1000}>
-            <Button>Portfolio</Button>
-          </Link>
-        </S.ItemsHomeWrapper>
+      <S.ItemsHomeWrapper>
+        <S.Welcome>
+          <h2>Hello!</h2>
+          <svg
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <path d="M0 30.1H30V0.0999998H0V30.1Z" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use xlinkHref="#image0" transform="scale(0.015625)" />
+              </pattern>
+              <image
+                id="image0"
+                width="64"
+                height="64"
+                xlinkHref="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </S.Welcome>
+        <S.Name>
+          I am Caio Augusto. <br />I create things for the web.
+        </S.Name>
+        <S.About>
+          Front-end developer <s>and designer</s> based in Brazil. <br />I
+          always try to write clean code and I value accessibility.
+        </S.About>
+        <Link to="portfolio" spy={true} smooth="easeInOutQuart" duration={1000} >
+          <Button>Portfolio</Button>
+        </Link>
+      </S.ItemsHomeWrapper>
     </S.HomeSection>
   );
 };
