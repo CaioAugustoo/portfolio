@@ -27,9 +27,6 @@ ${({ theme }) => css`
     text-decoration: none;
   }
 `}
-
-
-
 `;
 export default GlobalStyles;
 
@@ -40,5 +37,9 @@ export const Container = styled.div`
     padding: 0 4rem;
     margin: 0 auto;
     width: 100%;
+
+    @media (max-width: ${theme.media.sm}) {
+      padding: 0 3.5rem;
+    }
   `}
 `;

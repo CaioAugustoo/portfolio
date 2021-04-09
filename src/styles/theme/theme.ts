@@ -5,6 +5,10 @@ export default {
     secondary: '#573BFF',
     white: '#ffffff'
   },
+  media: {
+    sm: '560px',
+    md: '990px'
+  },
   font: {
     family: 'Poppins, sans-serif',
     light: 300,

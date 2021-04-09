@@ -13,11 +13,11 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
-        <title>Caio Augusto | Desenvolvedor Front-end</title>
-        <meta name="title" content="Caio Augusto | Desenvolvedor Front-end" />
+        <title>Caio Augusto | Front-end Developer</title>
+        <meta name="title" content="Caio Augusto | Front-end Developer" />
         <meta
           name="description"
-          content="Desenvolvedor Front-end & UI/UX Designer."
+          content="Front-end Developer & UI/UX Designer"
         />
         <meta
           name="google-site-verification"
@@ -27,30 +27,30 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:url" content="https://caiohtml.com/" />
         <meta
           property="og:title"
-          content="Caio Augusto | Desenvolvedor Front-end"
+          content="Caio Augusto | Front-end Developer"
         />
         <meta name="theme-color" content="#4C30F5;
 " />
         <meta name="background-color" content="#0B0D17" />
         <meta
           property="og:description"
-          content="Desenvolvedor Front-end & UI/UX Designer."
+          content="Front-end Developer & UI/UX Designer"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://caiohtml.com/" />
         <meta
           property="twitter:title"
-          content="Caio Augusto | Desenvolvedor Front-end"
+          content="Caio Augusto | Front-end Developer"
         />
         <meta
           property="twitter:description"
-          content="Desenvolvedor Front-end & UI/UX Designer."
+          content="Front-end Developer & UI/UX Designer"
         />
         <meta
           name="keywords"
-          content="front-end, desenvolvedor front-end, ui ux designer, designer gráfico,
-            desenvolvedor front-end freelancer, desenvolvedor reactjs, desenvolvedor javascript,
-            javascript, react, reactjs, typescript, strapi, api, dev, nextjs, cypress, tests, autoditada,
+          content="front-end, developer front-end, ui ux designer, graphic designer,
+            developer front-end freelancer, developer reactjs, developer javascript,
+            javascript, react, reactjs, typescript, strapi, api, dev, nextjs, cypress, tests,
             caioaugusto, caioaugusto, caiohtml, caio augusto, freelancer, freela"
         />
         <meta name="robots" content="nofollow" />

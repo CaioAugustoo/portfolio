@@ -4,7 +4,6 @@ import * as S from "./styles";
 import { Container } from "styles/globals";
 import { useEffect, useState } from "react";
 
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,7 +16,7 @@ const Header = () => {
   return (
     <S.Header>
       <Container>
-        <S.ItensWrapper>
+        <S.ItemsWrapper>
           <Link to="home" spy={true} smooth="easeInOutQuart" duration={1000}>
             <img
               src="/img/logo.svg"
@@ -56,7 +55,7 @@ const Header = () => {
                   smooth="easeInOutQuart"
                   duration={1000}
                 >
-                  Contato
+                  Contact
                 </Link>
               </S.NavItem>
             </S.NavItens>
@@ -66,12 +65,12 @@ const Header = () => {
             className={isMenuOpen ? "menu_active" : ""}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           />
-        </S.ItensWrapper>
+        </S.ItemsWrapper>
         <S.MobileWrapper
           id="hmocIu"
           className={isMenuOpen ? "menu_active" : ""}
         >
-          <S.MobileItens>
+          <S.MobileItems>
             <S.MobileItem>
               <Link
                 onClick={() => setIsMenuOpen(false)}
@@ -105,7 +104,7 @@ const Header = () => {
                 Contact
               </Link>
             </S.MobileItem>
-          </S.MobileItens>
+          </S.MobileItems>
         </S.MobileWrapper>
       </Container>
     </S.Header>

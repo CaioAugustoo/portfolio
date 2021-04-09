@@ -15,7 +15,7 @@ export const Button = styled.button`
 
     &:hover {
       background-color: ${theme.colors.secondary};
-      transform: translateY(-1px);
+      transform: translateY(-3px);
     }
   `}
 `;

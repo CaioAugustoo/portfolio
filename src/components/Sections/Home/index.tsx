@@ -1,7 +1,5 @@
 import Button from "components/UI/Button";
 
-import { Container } from "styles/globals";
-
 import * as S from "./styles";
 import { Link } from "react-scroll";
 
@@ -31,7 +29,9 @@ const Home = () => {
             Front-end developer <s>and designer</s> based in Brazil. <br />I
             always try to write clean code and I value accessibility.
           </S.About>
-          <Button>Portfolio</Button>
+          <Link to="portfolio" spy={true} smooth="easeInOutQuart" duration={1000}>
+            <Button>Portfolio</Button>
+          </Link>
         </S.ItemsHomeWrapper>
     </S.HomeSection>
   );
