@@ -11,6 +11,7 @@ export const fromBottom = keyframes`
   }
 `;
 
+
 export const mobileItens = keyframes`
   0% {
     transform: translateX(-50px);

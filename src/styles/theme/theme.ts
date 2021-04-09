@@ -23,6 +23,7 @@ export default {
       xsmallx2: '2.4rem',
       small: '3.0rem',
       smallx2: '4.8rem',
+      xlarge: '5.0rem',
       large: '8.0rem',
     }
   }
