@@ -33,7 +33,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.13",
+    "@babel/core": "^7.13.15",
     "@babel/preset-typescript": "^7.12.13",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/react": "^6.2.7",	
