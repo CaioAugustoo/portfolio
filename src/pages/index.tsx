@@ -1,26 +1,16 @@
-import Header from "components/Header/index";
-import Main from "components/MainSection/index";
-import AboutSection from "components/AboutSection/index";
-import PortfolioSection from "components/PortfolioSection/index";
-import ContactSection from "components/ContactSection/index";
-import Footer from "components/Footer/index";
-import ScrollTop from "components/ScrollTop/index";
+import Header from "components/UI/Header";
+import Home from "components/Sections/Home";
 
 import GlobalStyles from "styles/globals";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Header />
-      <Main />
-      <AboutSection />
-      <PortfolioSection />
-      <ContactSection />
-      <Footer />
-      <ScrollTop />
+      <Home />
       <GlobalStyles />
     </>
   );
 };
 
-export default Home;
+export default HomePage;

@@ -17,16 +17,10 @@ export const fadeOut = keyframes`
 
 export const fromBottom = keyframes`
   0% {
-    transform: translateY(50px);
+    transform: translateY(40px);
     opacity: 0;
   }
-  50% {
-    transform: translateY(0px);
-    opacity: 1;
-  } 70% {
-    transform: translateY(3px);
-    opacity: 1;
-  } 100% {
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -69,28 +63,6 @@ export const fadeOpacity = keyframes`
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-`;
-
-export const fromLeft = keyframes`
-  0% {
-    opacity: 0;
-    transform: translate3d(-150px, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-`;
-
-export const appears = keyframes`
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  } 100% {
-    transform: translateY(0px);
     opacity: 1;
   }
 `;

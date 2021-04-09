@@ -11,10 +11,8 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <link rel="icon" href="/img/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <title>Caio Augusto | Desenvolvedor Front-end</title>
         <meta name="title" content="Caio Augusto | Desenvolvedor Front-end" />
         <meta
@@ -31,8 +29,9 @@ const App = ({ Component, pageProps }: AppProps) => {
           property="og:title"
           content="Caio Augusto | Desenvolvedor Front-end"
         />
-        <meta name="theme-color" content="#4285f4" />
-        <meta name="background-color" content="#ffffff" />
+        <meta name="theme-color" content="#4C30F5;
+" />
+        <meta name="background-color" content="#0B0D17" />
         <meta
           property="og:description"
           content="Desenvolvedor Front-end & UI/UX Designer."

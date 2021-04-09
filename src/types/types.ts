@@ -1,6 +1,4 @@
-export type ButtonDarkModeProps = {
-  id: string
-}
+import React from "react"
 
 export type HeaderProps = {
   item: string
@@ -14,7 +12,7 @@ export type ImageProps = {
 }
 
 export type ButtonProps = {
-  children?: string;
+  children?: React.ReactNode;
 }
 
 export type TitlesProps = {
