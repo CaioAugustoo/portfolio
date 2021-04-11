@@ -1,35 +1,35 @@
 [
   {
     "project_name": "Dogs",
-    "project_description": "Este projeto consiste em uma rede social inspirada no Instagram, feita especialmente para cachorros. Consome uma API e retorna os dados. Podemos efetuar login, registrar como novo usuário, postar uma nova foto, apagar fotos, recuperar senhas, etc. tudo através de uma API. Desenvolvida com React.js.",
-    "project_url": "https://dogsreact.netlify.app",
+    "project_description": "This project consists of a social network inspired by Instagram, made especially for dogs. Consume an API and return the data. We can log in, register as a new user, post a new photo, delete photos, recover passwords, etc. all through an API. Developed with React.js.",
+    "project_url": "https://dogs-eta.vercel.app/",
     "project_git": "https://github.com/CaioAugustoo/dogs",
-    "project_image": "https://i.gyazo.com/69b06e4c38c3e07eb066ac6f0906b1b1.jpg"
+    "project_image": "https://i.gyazo.com/0313d90079239704611501f4557d91e1.png"
   },
   {
     "project_name": "PickPallet",
-    "project_description": "Este projeto é um clone de ColorHunt. Ambas web app's possuem as mesmas intenções: reunir diversas paletas afim de ajudar designers e artistas. Qualquer usuário pode visualizar/criar qualquer paleta e copiar cada cor de cada paleta. Além do mais, contém um scroll infinito. É consumida uma API na qual eu desenvolvi. Realizado com React.js.",
-    "project_url": "https://pickpallet.netlify.app",
+    "project_description": "This project is a clone of ColorHunt. Both web apps have the same intentions: to gather different palettes in order to help designers and artists. Any user can view / create any palette and copy each color from each palette. What's more, it contains an infinite scroll. An API is consumed in which I developed. Developed with React.js.",
+    "project_url": "https://pick-pallet.vercel.app/",
     "project_git": "https://github.com/CaioAugustoo/pick_pallet",
     "project_image": "https://i.gyazo.com/f5d963e93d930ed900ffe580b5849b09.png"
   },
   {
     "project_name": "Blog",
-    "project_description": "Este projeto consiste em um blog pessoal, onde futuramente farei posts dando dicas e passando conhecimentos que eu adquiri e que irei adquirindo ao longo de minha carreira. Neste projeto eu aprendi a como utilizar novas bibliotecas e pude experimentar o Next.js. Foi meu primeiro projeto com Next.js. Foi utilizado o TypeScript para tipagens.",
-    "project_url": "https://caio-blog.netlify.app",
-    "project_git": "https://github.com/CaioAugustoo/blog_nextjs",
-    "project_image": "https://i.gyazo.com/9f1b338c70463345d0c6069ecaafb970.png"
+    "project_description": "This project consists of a personal blog, where in the future I will make posts giving tips and passing on knowledge that I acquired and that I will acquire throughout my career. In this project I learned how to use new libraries and I was able to try Next.js. It was my first project with Next.js. Developed with Next.js, GraphQL and TypeScript.",
+    "project_url": "https://caio-blog.vercel.app/",
+    "project_git": "https://github.com/CaioAugustoo/nextjs_blog",
+    "project_image": "https://i.gyazo.com/850d588d2e4d24f33a1a5b74ffb1af42.png"
   },
   {
     "project_name": "CV19Tracker",
-    "project_description": "Este foi meu primeiro projeto realizado com React.js. Este projeto consome uma API Brasileira que retorna os dados em tempo real da situação do coronavírus no Brasil e no mundo. Pude aprender bastante com este projeto. Aprendi a como consumir API's dentro do React e a como utilizar componentes funcionais.",
+    "project_description": "This was my first project with React.js. This project consumes a Brazilian API that returns the data in real time of the coronavirus situation in Brazil and in the world. I was able to learn a lot from this project. I learned how to consume API's in React and how to use functional components.",
     "project_url": "https://cv19tracker.netlify.app",
     "project_git": "https://github.com/CaioAugustoo/cv19tracker",
     "project_image": "https://i.gyazo.com/ad7a6db28ac6352ace7f1c99cdc52622.png"
   },
   {
     "project_name": "Gitfinder",
-    "project_description": "Este projeto consiste em consumir a API do Github. Você digita um usuário do Github e a aplicação irá retornar dados do perfil procurado. É retornado dados como: Foto de perfil do usuário, nome, etc. É filtrado, também, os repositórios com mais estrelas. Feito com React.js.",
+    "project_description": "This project consists of consuming the Github API. You enter a Github user and the application will return data from the profile you are looking for. Data such as: User profile picture, name, and more. The repositories with the most stars are also filtered. Developed with React.js.",
     "project_url": "https://git-overview.netlify.app",
     "project_git": "https://github.com/CaioAugustoo/git_finder",
     "project_image": "https://i.gyazo.com/8be64821c462661185745e7d8db60166.png"

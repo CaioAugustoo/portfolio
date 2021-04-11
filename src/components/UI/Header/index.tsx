@@ -52,15 +52,9 @@ const Header = () => {
                 </Link>
               </S.NavItem>
               <S.NavItem>
-                <Link
-                  to="blog"
-                  spy={true}
-                  smooth="easeInOutQuart"
-                  duration={duration}
-                  activeClass="active"
-                >
+                <a href="https://caio-blog.vercel.app/" target="_blank">
                   Blog
-                </Link>
+                </a>
               </S.NavItem>
               <S.NavItem>
                 <Link

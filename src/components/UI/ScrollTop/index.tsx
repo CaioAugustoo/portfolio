@@ -12,9 +12,7 @@ const ScrollTop = () => {
     };
 
     window.addEventListener("scroll", verifyUserScroll);
-    return () => {
-      window.removeEventListener("scroll", verifyUserScroll);
-    };
+    return () => window.removeEventListener("scroll", verifyUserScroll);
   });
 
   return (

@@ -7,7 +7,8 @@ export default {
   },
   media: {
     sm: '560px',
-    md: '990px'
+    md: '990px',
+    lg: '1250px',
   },
   font: {
     family: 'Poppins, sans-serif',
@@ -16,6 +17,7 @@ export default {
     medium: 500,
     bold: 700,
     sizes: {
+      xxxsmall2: '1.4rem',
       xxxsmall: '1.6rem',
       xxsmall: '1.8rem',
       xxsmallx2: '2.0rem',

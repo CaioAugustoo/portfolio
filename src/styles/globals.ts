@@ -34,7 +34,7 @@ export default GlobalStyles;
 export const Container = styled.div`
   ${({ theme }) => css`
     max-width: 150rem;
-    padding: 0 4rem;
+    padding: 0 3rem;
     margin: 0 auto;
     width: 100%;
 

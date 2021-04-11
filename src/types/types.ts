@@ -17,18 +17,7 @@ export type ButtonProps = {
 
 export type TitlesProps = {
   children?: string;
-}
-
-export type PortfolioItems = {
-  project_name: string
-  project_description: string
-  project_url: string
-  project_git: string
-  project_image: string
-}
-
-export type PortfolioItemsProps = {
-  projects?: PortfolioItems[]
+  scrollPercentage?: number
 }
 
 export type IntersectionObserverEntry = {

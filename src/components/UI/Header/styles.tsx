@@ -64,6 +64,7 @@ export const NavItem = styled.li`
 
     a {
       transition: all 0.2s ease;
+      color: ${theme.colors.white};
 
         &::after {
           transition: all .3s ease;

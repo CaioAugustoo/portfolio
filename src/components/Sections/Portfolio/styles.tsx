@@ -5,9 +5,10 @@ export const Wrapper = styled.section`
   height: auto;
   max-width: 125rem;
   margin: 0 auto;
-  padding: 10rem 4rem;
+  padding: 10rem 3rem;
+  transition: all 0.3s ease;
 
   &.active > div > * {
-    animation: ${fromBottom} .5s ease;
+    animation: ${fromBottom} .5s forwards;
   }
 `;
