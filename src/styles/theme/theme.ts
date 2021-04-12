@@ -1,35 +1,32 @@
 export default {
   colors: {
-    black: '#1a1919',
-    primary: '#0185B2',
-    secondary: '#00aaff',
+    mainbg: '#0B0D17',
+    primary: '#4C30F5',
+    secondary: '#7962ff',
     white: '#ffffff'
   },
   media: {
-    medium: '1400px',
-    large: '1200px',
-    small: '600px',
+    sm: '560px',
+    md: '990px',
+    lg: '1250px',
   },
   font: {
-    family: 'Montserrat, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
+    family: 'Poppins, sans-serif',
+    light: 300,
     normal: 400,
-    normalx2: 500,
-    medium: 600,
+    medium: 500,
     bold: 700,
-    styles: {
-      italic: 'italic',
-    },
     sizes: {
-      xxsmall: '1rem',
-      xxsmallx2: '1.15rem',
-      xxsmallx3: '1.2rem',
-      xsmall: '1.4rem',
-      xsmallx2: '1.5rem',
-      small: '1.7rem',
-      smallx2: '2.0rem',
-      medium: '2.5rem',
-      mediumx2: '3.7rem',
-      large: '8rem',
+      xxxsmall2: '1.4rem',
+      xxxsmall: '1.6rem',
+      xxsmall: '1.8rem',
+      xxsmallx2: '2.0rem',
+      xsmall: '2.2rem',
+      xsmallx2: '2.4rem',
+      small: '3.0rem',
+      smallx2: '4.8rem',
+      xlarge: '5.0rem',
+      large: '8.0rem',
     }
   }
-}
+} as const

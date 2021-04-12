@@ -1,5 +1,5 @@
 {
-  "name": "Caio Augusto | Desenvolvedor Frontend",
+  "name": "Caio Augusto | Front-end Developer",
   "short_name": "Caio Augusto",
   "icons": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#ffff",
-  "description": "Portfólio onde me apresento e mostro meus projetos",
+  "description": "Portfolio where I show my projects",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#fff"

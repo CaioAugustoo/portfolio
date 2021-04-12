@@ -1,0 +1,37 @@
+[
+  {
+    "project_name": "Dogs",
+    "project_description": "This project consists of a social network inspired by Instagram, made especially for dogs. Consume an API and return the data. We can log in, register as a new user, post a new photo, delete photos, recover passwords, etc. all through an API. Developed with React.js.",
+    "project_url": "https://dogs-eta.vercel.app/",
+    "project_git": "https://github.com/CaioAugustoo/dogs",
+    "project_image": "https://i.gyazo.com/0313d90079239704611501f4557d91e1.png"
+  },
+  {
+    "project_name": "PickPallet",
+    "project_description": "This project is a clone of ColorHunt. Both web apps have the same intentions: to gather different palettes in order to help designers and artists. Any user can view / create any palette and copy each color from each palette. What's more, it contains an infinite scroll. An API is consumed in which I developed. Developed with React.js.",
+    "project_url": "https://pick-pallet.vercel.app/",
+    "project_git": "https://github.com/CaioAugustoo/pick_pallet",
+    "project_image": "https://i.gyazo.com/f5d963e93d930ed900ffe580b5849b09.png"
+  },
+  {
+    "project_name": "Blog",
+    "project_description": "This project consists of a personal blog, where in the future I will make posts giving tips and passing on knowledge that I acquired and that I will acquire throughout my career. In this project I learned how to use new libraries and I was able to try Next.js. It was my first project with Next.js. Developed with Next.js, GraphQL and TypeScript.",
+    "project_url": "https://caio-blog.vercel.app/",
+    "project_git": "https://github.com/CaioAugustoo/nextjs_blog",
+    "project_image": "https://i.gyazo.com/850d588d2e4d24f33a1a5b74ffb1af42.png"
+  },
+  {
+    "project_name": "CV19Tracker",
+    "project_description": "This was my first project with React.js. This project consumes a Brazilian API that returns the data in real time of the coronavirus situation in Brazil and in the world. I was able to learn a lot from this project. I learned how to consume API's in React and how to use functional components.",
+    "project_url": "https://cv19tracker.netlify.app",
+    "project_git": "https://github.com/CaioAugustoo/cv19tracker",
+    "project_image": "https://i.gyazo.com/ad7a6db28ac6352ace7f1c99cdc52622.png"
+  },
+  {
+    "project_name": "Gitfinder",
+    "project_description": "This project consists of consuming the Github API. You enter a Github user and the application will return data from the profile you are looking for. Data such as: User profile picture, name, and more. The repositories with the most stars are also filtered. Developed with React.js.",
+    "project_url": "https://git-overview.netlify.app",
+    "project_git": "https://github.com/CaioAugustoo/git_finder",
+    "project_image": "https://i.gyazo.com/8be64821c462661185745e7d8db60166.png"
+  }
+]

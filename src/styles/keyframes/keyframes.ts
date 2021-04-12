@@ -1,36 +1,27 @@
 import { keyframes } from "styled-components";
 
-export const fadeOut = keyframes`
+export const shakeHands = keyframes`
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+`
+
+export const fromBottom = keyframes`
   0% {
-    height: 2rem;
+    transform: translateY(40px);
     opacity: 0;
   }
-  50% {
-    height: 9rem;
-    opacity: 0.5;
-  }
   100% {
-    height: 7rem;
+    transform: translateY(0px);
     opacity: 1;
   }
 `;
 
-export const fromBottom = keyframes`
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0px);
-    opacity: 1;
-  } 70% {
-    transform: translateY(3px);
-    opacity: 1;
-  } 100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-`;
 
 export const mobileItens = keyframes`
   0% {
@@ -69,28 +60,6 @@ export const fadeOpacity = keyframes`
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-`;
-
-export const fromLeft = keyframes`
-  0% {
-    opacity: 0;
-    transform: translate3d(-150px, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-`;
-
-export const appears = keyframes`
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  } 100% {
-    transform: translateY(0px);
     opacity: 1;
   }
 `;

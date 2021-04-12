@@ -1,21 +1,23 @@
 # 🚀 Portfólio
+
 Portfólio desenvolvido com NextJS e TypeScript.
 
-## ℹ️ Sobre o projeto 
+## ℹ️ Sobre o projeto
+
 Este projeto consiste em mostrar meus recentes e futuros trabalhos realizados ao decorrer da minha carreira.
 
-
 ## ✨ Demonstração
+
 Veja abaixo uma foto do projeto.
 [![Image from Gyazo](https://i.gyazo.com/f289efe4c5f076552eaf42b78f8fd838.png)](https://gyazo.com/f289efe4c5f076552eaf42b78f8fd838)
 
 Você pode conferir o resultado final em: https://caiohtml.com
 
 ## 🎯 Objetivo do projeto
+
 Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos com NextJS. Foi reforçado, também, os conhecimentos com TypeScript.
 
-## 📝 Tecnologias 
-Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens: 
+## 📝 Tecnologias
 
 - [React.js](https://pt-br.reactjs.org)
 - [Next.js](https://nextjs.org)
@@ -25,6 +27,7 @@ Para a realização desse projeto foi utilizado as seguintes tecnologias/linguag
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## ⚙️ Instalação
+
 Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
@@ -42,7 +45,6 @@ $ yarn start
 
 Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
-
 
 ## Licença
 Copyright © 2021 Caio Augusto.

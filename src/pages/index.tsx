@@ -1,18 +1,18 @@
-import Header from "components/Header/index";
-import Main from "components/MainSection/index";
-import AboutSection from "components/AboutSection/index";
-import PortfolioSection from "components/PortfolioSection/index";
-import ContactSection from "components/ContactSection/index";
-import Footer from "components/Footer/index";
-import ScrollTop from "components/ScrollTop/index";
+import Header from "components/UI/Header";
+import Home from "components/Sections/Home";
 
 import GlobalStyles from "styles/globals";
+import AboutSection  from "components/Sections/About";
+import PortfolioSection from "components/Sections/Portfolio";
+import ContactSection from "components/Sections/Contact";
+import Footer from "components/UI/Footer";
+import ScrollTop from "components/UI/ScrollTop";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Header />
-      <Main />
+      <Home />
       <AboutSection />
       <PortfolioSection />
       <ContactSection />
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

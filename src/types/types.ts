@@ -1,6 +1,4 @@
-export type ButtonDarkModeProps = {
-  id: string
-}
+import React from "react"
 
 export type HeaderProps = {
   item: string
@@ -14,23 +12,12 @@ export type ImageProps = {
 }
 
 export type ButtonProps = {
-  children?: string;
+  children?: React.ReactNode;
 }
 
 export type TitlesProps = {
   children?: string;
-}
-
-export type PortfolioItems = {
-  project_name: string
-  project_description: string
-  project_url: string
-  project_git: string
-  project_image: string
-}
-
-export type PortfolioItemsProps = {
-  projects?: PortfolioItems[]
+  scrollPercentage?: number
 }
 
 export type IntersectionObserverEntry = {
