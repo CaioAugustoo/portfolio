@@ -2,7 +2,7 @@ export default {
   colors: {
     mainbg: '#0B0D17',
     primary: '#4C30F5',
-    secondary: '#573BFF',
+    secondary: '#7962ff',
     white: '#ffffff'
   },
   media: {

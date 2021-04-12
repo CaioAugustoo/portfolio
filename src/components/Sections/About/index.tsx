@@ -44,6 +44,7 @@ const AboutSection = () => {
             href="https://www.amazon.com/dp/B085D95SX5?searchxofy=true&binding=kindle_edition&ref_=dbs_s_aps_series_rwt_tkin"
             target="_blank"
             title="Martin's book series"
+            rel="noopener"
           >
             Robert C. Martin's book series
           </a>
@@ -55,6 +56,7 @@ const AboutSection = () => {
             href="https://pt-br.reactjs.org/"
             target="_blank"
             title="React.js's documentation"
+            rel="noopener"
           >
             React.js
           </a>
@@ -63,6 +65,7 @@ const AboutSection = () => {
             href="https://www.typescriptlang.org/"
             target="_blank"
             title="Documentation of TypeScript"
+            rel="noopener"
           >
             TypeScript
           </a>
@@ -71,6 +74,7 @@ const AboutSection = () => {
             href="https://testing-library.com/docs/react-testing-library/intro/"
             target="_blank"
             title="Documentation of React Testing Library"
+            rel="noopener"
           >
             React Testing Library
           </a>{" "}

@@ -1,5 +1,5 @@
 import Title from "components/UI/Title";
-import Button from 'components/UI/Button'
+import Button from "components/UI/Button";
 
 import * as S from "./styles";
 
@@ -12,11 +12,12 @@ const ContactSection = () => {
         <Title>Contact</Title>
 
         <S.ContactMeText>
-          If you want to carry out a project with me or make small talk,
-          do not hesitate to send me an email: <a href="mailto:caioamfr@gmail.com">caioamfr@gmail.com</a>
+          If you want to carry out a project or chat with me, do not hesitate to
+          send me an email:{" "}
+          <a href="mailto:caioamfr@gmail.com">caioamfr@gmail.com</a>
         </S.ContactMeText>
 
-        <a href="https://linktr.ee/caioaugustoo" target="_blank">
+        <a href="https://linktr.ee/caioaugustoo" target="_blank" rel="noopener">
           <Button>Contact</Button>
         </a>
       </Container>

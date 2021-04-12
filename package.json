@@ -42,6 +42,7 @@
     "lint-staged": "^10.5.4",
     "plop": "^2.7.4",
     "react-is": "^17.0.2",
+    "terser-webpack-plugin": "^5.1.1",
     "typescript": "^4.2.4"
   }
 }

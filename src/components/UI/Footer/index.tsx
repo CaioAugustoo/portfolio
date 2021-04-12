@@ -31,7 +31,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <a href="https://caio-blog.vercel.app/" target="_blank">
+            <a href="https://caio-blog.vercel.app/" target="_blank" rel="noopener">
               Blog
             </a>
           </li>

@@ -55,7 +55,7 @@ const Header = () => {
                 </Link>
               </S.NavItem>
               <S.NavItem>
-                <a href="https://caio-blog.vercel.app/" target="_blank">
+                <a href="https://caio-blog.vercel.app/" target="_blank" rel="noopener">
                   Blog
                 </a>
               </S.NavItem>
@@ -105,7 +105,7 @@ const Header = () => {
               </Link>
             </S.MobileItem>
             <S.MobileItem>
-              <a href="https://caio-blog.vercel.app/" target="_blank">
+              <a href="https://caio-blog.vercel.app/" target="_blank" rel="noopener">
                 Blog
               </a>
             </S.MobileItem>
