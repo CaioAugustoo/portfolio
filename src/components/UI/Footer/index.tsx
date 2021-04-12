@@ -21,7 +21,7 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              to="about"
+              to="portfolio"
               spy={true}
               smooth="easeInOutQuart"
               duration={1000}
