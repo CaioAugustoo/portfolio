@@ -30,6 +30,11 @@ const Footer = () => {
               Portfolio
             </Link>
           </li>
+          <li>
+            <a href="https://caio-blog.vercel.app/" target="_blank">
+              Blog
+            </a>
+          </li>
         </S.LinksWrapper>
       </S.Links>
       <S.Copyright>© {currentDate} - Caio Augusto</S.Copyright>

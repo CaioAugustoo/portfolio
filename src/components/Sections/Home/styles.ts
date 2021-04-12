@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { fromBottom } from "styles/keyframes/keyframes";
+import { fromBottom, shakeHands } from "styles/keyframes/keyframes";
 
 export const HomeSection = styled.section`
   height: 100vh;
@@ -43,6 +43,15 @@ export const Welcome = styled.div`
 
     svg {
       margin-left: 10px;
+      animation-name: ${shakeHands};
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+
+      @media (max-width: ${theme.media.sm}) {
+        width: 23px;
+      }
     }
 
     display: flex;
