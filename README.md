@@ -6,12 +6,10 @@ Portfólio desenvolvido com NextJS e TypeScript.
 
 Este projeto consiste em mostrar meus recentes e futuros trabalhos realizados ao decorrer da minha carreira.
 
-Este projeto conta, como "feature", com um modo-light/modo-escuro para uma melhor visualização. Após alternar entre os temas, o tema ficará salvo no localstorage do seu navegador, sendo assim, quando você sair ou fechar a página, a preferência pelo tema ficará salvo, sem a necessidade de ficar habilitando manualmente.
-
 ## ✨ Demonstração
 
 Veja abaixo uma foto do projeto.
-[![Image from Gyazo](https://i.gyazo.com/4fd5b5940c68d61535029eb8ec8035fd.png)](https://gyazo.com/4fd5b5940c68d61535029eb8ec8035fd)
+[![Image from Gyazo](https://i.gyazo.com/f289efe4c5f076552eaf42b78f8fd838.png)](https://gyazo.com/f289efe4c5f076552eaf42b78f8fd838)
 
 Você pode conferir o resultado final em: https://caiohtml.com
 
@@ -21,11 +19,11 @@ Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos 
 
 ## 📝 Tecnologias
 
-Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens:
-
-- [NextJS](https://nextjs.org/)
-- [Styled components](https://styled-components.com)
-- [react-scroll](https://www.npmjs.com/package/react-scroll)
+- [React.js](https://pt-br.reactjs.org)
+- [Next.js](https://nextjs.org)
+- [styled-components](https://styled-components.com/)
+- [next-pwa](https://www.npmjs.com/package/next-pwa)
+- [Plop.js](https://plopjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## ⚙️ Instalação
@@ -49,5 +47,4 @@ Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
 
 ## Licença
-
-Copyright © 2020 Caio Augusto.
+Copyright © 2021 Caio Augusto.
