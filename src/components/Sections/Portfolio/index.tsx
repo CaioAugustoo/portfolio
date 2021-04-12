@@ -6,7 +6,7 @@ import Title from "components/UI/Title";
 import useAnimateOnScroll from "hooks/useAnimateOnScroll";
 
 const PortfolioSection = () => {
-  const elementRef = useAnimateOnScroll()
+  const elementRef = useAnimateOnScroll(0)
 
   return (
     <S.Wrapper id="portfolio" ref={elementRef}>

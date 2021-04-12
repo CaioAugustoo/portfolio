@@ -19,8 +19,7 @@ export const Header = styled.header`
     top: 0;
 
     background: ${theme.colors.mainbg};
-
-    animation-delay: 0.1s;
+    opacity: 0.99;
 
     img {
       cursor: pointer;
@@ -28,6 +27,7 @@ export const Header = styled.header`
 
     @media(max-width: ${theme.media.md}) {
       height: 6.5rem;
+      opacity: 1;
     }
   `}
 `;
@@ -75,6 +75,10 @@ export const NavItem = styled.li`
           width: 0%;
           background-color: ${theme.colors.secondary};
           bottom: -27px;
+
+          @media(max-width: ${theme.media.md}) {
+            bottom: -20px;
+          }
         }
 
       &:hover {
@@ -233,6 +237,11 @@ export const MobileItems = styled.ul`
 export const MobileItem = styled.li`
   ${({ theme }) => css`
     margin: 40px 0;
+    text-transform: uppercase;
+
+    a {
+      color: ${theme.colors.white};
+    }
 
     font-size: ${theme.font.sizes.xxxsmall};
     text-align: center;

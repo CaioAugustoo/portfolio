@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const useAnimateOnScroll = () => {
+const useAnimateOnScroll = (threshold = 0.1) => {
   const elementRef = useRef<HTMLHeadingElement>(null!);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const useAnimateOnScroll = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.15,
+      threshold: threshold,
     };
 
     const observer = new IntersectionObserver(handleMutation, options);

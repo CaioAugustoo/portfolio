@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const duration = 1000
+  const duration = 1000;
 
   useEffect(() => {
     isMenuOpen
@@ -18,7 +18,12 @@ const Header = () => {
     <S.Header>
       <Container>
         <S.ItemsWrapper>
-          <Link to="home" spy={true} smooth="easeInOutQuart" duration={duration}>
+          <Link
+            to="home"
+            spy={false}
+            smooth="easeInOutQuart"
+            duration={duration}
+          >
             <img
               src="/img/logo.svg"
               alt="Logo com as inicias 'C A'"
@@ -32,7 +37,6 @@ const Header = () => {
               <S.NavItem>
                 <Link
                   to="about"
-                  spy={true}
                   smooth="easeInOutQuart"
                   duration={duration}
                   activeClass="active"
@@ -43,7 +47,6 @@ const Header = () => {
               <S.NavItem>
                 <Link
                   to="portfolio"
-                  spy={true}
                   smooth="easeInOutQuart"
                   duration={duration}
                   activeClass="active"
@@ -59,7 +62,6 @@ const Header = () => {
               <S.NavItem>
                 <Link
                   to="contact"
-                  spy={true}
                   smooth="easeInOutQuart"
                   duration={duration}
                   activeClass="active"
@@ -103,15 +105,9 @@ const Header = () => {
               </Link>
             </S.MobileItem>
             <S.MobileItem>
-              <Link
-                onClick={() => setIsMenuOpen(false)}
-                to="blog"
-                spy={true}
-                smooth="easeInOutQuart"
-                duration={duration}
-              >
+              <a href="https://caio-blog.vercel.app/" target="_blank">
                 Blog
-              </Link>
+              </a>
             </S.MobileItem>
             <S.MobileItem>
               <Link
