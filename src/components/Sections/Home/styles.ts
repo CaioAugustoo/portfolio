@@ -88,6 +88,11 @@ export const About = styled.p`
 
     margin: 20px auto 35px 0px;
 
+    em {
+      text-decoration: line-through;
+      font-style: normal;
+    }
+
     @media (max-width: ${theme.media.md}) {
       font-size: ${theme.font.sizes.xxsmall};
     }

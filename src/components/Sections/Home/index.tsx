@@ -2,13 +2,14 @@ import Button from "components/UI/Button";
 
 import * as S from "./styles";
 import { Link } from "react-scroll";
+import { HomePageDataProps } from "types/types";
 
-const Home = () => {
+const Home = ({ data }: HomePageDataProps) => {
   return (
     <S.HomeSection id="home">
       <S.ItemsHomeWrapper>
         <S.Welcome>
-          <h2>Hello!</h2>
+          <h2>{data.hellotext}</h2>
           <svg
             width="30"
             height="31"
@@ -36,14 +37,9 @@ const Home = () => {
             </defs>
           </svg>
         </S.Welcome>
-        <S.Name>
-          I am Caio Augusto. <br />I create things for the web.
-        </S.Name>
-        <S.About>
-          Front-end developer <s>and designer</s> based in Brazil. <br />I
-          always try to write clean code and I value accessibility.
-        </S.About>
-        <Link to="portfolio" spy={true} smooth="easeInOutQuart" duration={1000} >
+        <S.Name dangerouslySetInnerHTML={{ __html: data.introtext.html }} />
+        <S.About dangerouslySetInnerHTML={{ __html: data.introabout.html }} />
+        <Link to="portfolio" spy={true} smooth="easeInOutQuart" duration={1000}>
           <Button>Portfolio</Button>
         </Link>
       </S.ItemsHomeWrapper>

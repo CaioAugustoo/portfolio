@@ -1,53 +1,32 @@
 import * as S from "./styles";
 
-import projects from "./projects.json";
+import { PortfolioItemProps } from "types/types";
 
-const PortfolioItems = () => {
+const PortfolioItems = ({ projects }: PortfolioItemProps) => {
   return (
     <>
       <div>
-        {projects?.map(
-          (
-            {
-              project_image,
-              project_name,
-              project_description,
-              project_url,
-              project_git,
-            },
-            index
-          ) => (
-            <S.WorkItem
-              key={index}
-              style={{ animationDelay: `${index * 200}ms` }}
-            >
-              <S.Wrapper>
-                <S.WorkItemTitle>{project_name}</S.WorkItemTitle>
-                <S.WorkItemDescription>
-                  {project_description}
-                </S.WorkItemDescription>
+        {projects?.map(({ image, title, about, link, sourcelink }, index) => (
+          <S.WorkItem
+            key={index}
+            style={{ animationDelay: `${index * 200}ms` }}
+          >
+            <S.Wrapper>
+              <S.WorkItemTitle>{title}</S.WorkItemTitle>
+              <S.WorkItemDescription>{about}</S.WorkItemDescription>
 
-                <S.WorkItemButton>
-                  <a
-                    href={project_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit <span>→</span>
-                  </a>
-                  <a
-                    href={project_git}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Source
-                  </a>
-                </S.WorkItemButton>
-              </S.Wrapper>
-              <S.WorkItemImage src={project_image} alt="Project" />
-            </S.WorkItem>
-          )
-        )}
+              <S.WorkItemButton>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  Visit <span>→</span>
+                </a>
+                <a href={sourcelink} target="_blank" rel="noopener noreferrer">
+                  Source
+                </a>
+              </S.WorkItemButton>
+            </S.Wrapper>
+            <S.WorkItemImage src={image.url} alt={`Project ${title}`} />
+          </S.WorkItem>
+        ))}
       </div>
     </>
   );
