@@ -79,7 +79,7 @@ export const Name = styled.h1`
   `}
 `;
 
-export const About = styled.p`
+export const About = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxsmallx2};
     font-weight: ${theme.font.light};
