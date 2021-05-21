@@ -23,6 +23,7 @@ Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos 
 - [Next.js](https://nextjs.org)
 - [styled-components](https://styled-components.com/)
 - [GraphQL](https://graphql.org/)
+- [graphql-request](https://www.npmjs.com/package/graphql-request)
 - [GraphCMS](https://graphcms.com/)
 - [next-pwa](https://www.npmjs.com/package/next-pwa)
 - [Plop.js](https://plopjs.com/)
