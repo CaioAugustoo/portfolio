@@ -18,15 +18,18 @@ export const AboutSection = styled.section`
   `}
 `;
 
-export const AboutTexts = styled.p`
+export const AboutTexts = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xsmall};
     font-weight: ${theme.font.light};
 
-    margin: 30px auto;
+    p {
+      margin: 30px auto;
+    }
 
-    span {
+    u {
       color: ${theme.colors.secondary};
+      text-decoration: none;
     }
 
     a {
