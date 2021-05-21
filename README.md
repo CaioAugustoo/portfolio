@@ -22,6 +22,8 @@ Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos 
 - [React.js](https://pt-br.reactjs.org)
 - [Next.js](https://nextjs.org)
 - [styled-components](https://styled-components.com/)
+- [GraphQL](https://graphql.org/)
+- [GraphCMS](https://graphcms.com/)
 - [next-pwa](https://www.npmjs.com/package/next-pwa)
 - [Plop.js](https://plopjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
