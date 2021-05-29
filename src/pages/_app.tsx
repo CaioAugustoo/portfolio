@@ -11,8 +11,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <link rel="icon" href="/img/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <title>Caio Augusto | Front-end Developer</title>
         <meta name="title" content="Caio Augusto | Front-end Developer" />
         <meta
@@ -29,8 +27,11 @@ const App = ({ Component, pageProps }: AppProps) => {
           property="og:title"
           content="Caio Augusto | Front-end Developer"
         />
-        <meta name="theme-color" content="#4C30F5;
-" />
+        <meta
+          name="theme-color"
+          content="#4C30F5;
+"
+        />
         <meta name="background-color" content="#0B0D17" />
         <meta
           property="og:description"

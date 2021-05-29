@@ -59,22 +59,25 @@ export const Welcome = styled.div`
   `}
 `;
 
-export const Name = styled.h1`
+export const Name = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.large};
-    line-height: 1.2;
+    p {
+      font-size: ${theme.font.sizes.large};
+      line-height: 1.07;
+      font-weight: bold;
 
-    animation: ${fromBottom} 0.5s ease;
+      animation: ${fromBottom} 0.5s ease;
 
-    margin: 10px auto 0px -3px;
+      margin: 10px auto 0px -3px;
 
-    @media (max-width: ${theme.media.md}) {
-      font-size: ${theme.font.sizes.smallx2};
-    }
+      @media (max-width: ${theme.media.md}) {
+        font-size: ${theme.font.sizes.smallx2};
+      }
 
-    @media (max-width: ${theme.media.sm}) {
-      font-size: ${theme.font.sizes.small};
-      line-height: 1.4;
+      @media (max-width: ${theme.media.sm}) {
+        font-size: ${theme.font.sizes.small};
+        line-height: 1.4;
+      }
     }
   `}
 `;

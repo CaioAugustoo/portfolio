@@ -4,9 +4,13 @@ import * as S from "./styles";
 import { Link } from "react-scroll";
 import { HomePageDataProps } from "types/types";
 
+import useAnimateOnScroll from "hooks/useAnimateOnScroll";
+
 const Home = ({ data }: HomePageDataProps) => {
+  const elementRef = useAnimateOnScroll(0);
+
   return (
-    <S.HomeSection id="home">
+    <S.HomeSection id="home" ref={elementRef}>
       <S.ItemsHomeWrapper>
         <S.Welcome>
           <h2>{data.hellotext}</h2>

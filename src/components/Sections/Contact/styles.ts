@@ -34,7 +34,7 @@ export const ContactMeText = styled.p`
     text-align: center;
 
     a {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.secondary};
 
       &:hover {
         text-decoration: underline;

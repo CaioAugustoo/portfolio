@@ -8,7 +8,7 @@ const PortfolioItems = ({ projects }: PortfolioItemProps) => {
       <div>
         {projects?.map(({ image, title, about, link, sourcelink }, index) => (
           <S.WorkItem
-            key={index}
+            key={link}
             style={{ animationDelay: `${index * 200}ms` }}
           >
             <S.Wrapper>
@@ -17,7 +17,7 @@ const PortfolioItems = ({ projects }: PortfolioItemProps) => {
 
               <S.WorkItemButton>
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                  Visit <span>→</span>
+                  Visit →
                 </a>
                 <a href={sourcelink} target="_blank" rel="noopener noreferrer">
                   Source

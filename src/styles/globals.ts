@@ -11,6 +11,7 @@ ${({ theme }) => css`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   :root {
     font-size: 62.5%;
   }
@@ -20,11 +21,33 @@ ${({ theme }) => css`
     color: ${theme.colors.white};
     font-family: ${theme.font.family};
   }
+
   ul li {
     list-style: none;
   }
+
   a {
     text-decoration: none;
+  }
+
+  .portfolio-image {
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #10121D;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1D2132;
+    border-radius: 10px;
+  }
+
+  ::selection {
+    background-color: #1D2132;
   }
 `}
 `;
