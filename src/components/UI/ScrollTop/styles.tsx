@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components";
+import { ScrollTopProps } from "types/types";
 
-export const ScrollTop = styled.button`
-  ${({ theme }) => css`
+export const ScrollTop = styled.button<ScrollTopProps>`
+  ${({ theme, scrolled }) => css`
     background: ${theme.colors.secondary};
     position: fixed;
     right: 30px;
@@ -12,6 +13,7 @@ export const ScrollTop = styled.button`
     cursor: pointer;
     transition: all .3s ease;
     transform: translateY(0);
+    opacity: ${scrolled ? 1 : 0};
 
     &:hover {
       background: ${theme.colors.primary};
