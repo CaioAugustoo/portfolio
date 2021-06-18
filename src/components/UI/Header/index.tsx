@@ -14,7 +14,7 @@ const Header = () => {
     isMenuOpen
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "visible");
-  });
+  }, [isMenuOpen]);
 
   return (
     <S.Header>
@@ -75,10 +75,6 @@ const Header = () => {
                   Contact
                 </Link>
               </S.NavItem>
-
-              <S.NavItem title="Download Curriculum">
-                <Button size="small">CV</Button>
-              </S.NavItem>
             </S.NavItens>
           </S.Nav>
 
@@ -90,6 +86,7 @@ const Header = () => {
         <S.MobileWrapper
           id="hmocIu"
           className={isMenuOpen ? "menu_active" : ""}
+          aria-hidden={!isMenuOpen}
         >
           <S.MobileItems>
             <S.MobileItem>
@@ -133,10 +130,6 @@ const Header = () => {
               >
                 Contact
               </Link>
-            </S.MobileItem>
-
-            <S.MobileItem>
-              <Button size="small">CV</Button>
             </S.MobileItem>
           </S.MobileItems>
         </S.MobileWrapper>

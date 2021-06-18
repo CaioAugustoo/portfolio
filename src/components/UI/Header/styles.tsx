@@ -104,10 +104,6 @@ export const NavItem = styled.li`
       animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
       animation-delay: 0.5s;
     }
-    &:nth-child(5) {
-      animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-      animation-delay: 0.6s;
-    }
   `}
 `;
 
@@ -222,11 +218,6 @@ export const MobileWrapper = styled.div`
           animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
             both;
           animation-delay: 0.7s;
-        }
-        &:nth-child(5) {
-          animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-            both;
-          animation-delay: 0.8s;
         }
       }
     }

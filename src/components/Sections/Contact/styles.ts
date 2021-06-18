@@ -8,8 +8,9 @@ export const ContactSection = styled.section`
     max-width: 500px;
     text-align: center;
 
-    &.active > p, &.active > a {
-      animation: ${fromBottom} .3s ease;
+    &.active > p,
+    &.active > a {
+      animation: ${fromBottom} 0.3s ease;
     }
 
     ${Title} {
@@ -28,21 +29,21 @@ export const ContactSection = styled.section`
 `;
 
 export const ContactMeText = styled.p`
-  ${({theme}) => css`
+  ${({ theme }) => css`
     margin: 3.5rem 0 5rem 0;
     font-size: ${theme.font.sizes.xxsmallx2};
     text-align: center;
 
     a {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.secondary};
 
       &:hover {
         text-decoration: underline;
       }
     }
 
-    @media(max-width: ${theme.media.md}) {
+    @media (max-width: ${theme.media.md}) {
       font-size: ${theme.font.sizes.xxxsmall};
     }
   `}
-`
+`;

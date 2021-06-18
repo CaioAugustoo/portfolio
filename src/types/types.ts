@@ -11,6 +11,10 @@ export type ImageProps = {
   height: number;
 };
 
+export type ScrollTopProps = {
+  scrolled: boolean;
+};
+
 export type ButtonProps = {
   children: React.ReactNode;
   size?: "small" | "normal";

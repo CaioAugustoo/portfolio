@@ -44,7 +44,7 @@ Instale as dependencias digitando no termimal:
 $ yarn install
 
 Rode a aplicação no modo de desenvolvimento.
-$ yarn start
+$ yarn dev
 
 Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
