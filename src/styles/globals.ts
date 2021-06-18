@@ -30,10 +30,6 @@ ${({ theme }) => css`
     text-decoration: none;
   }
 
-  .portfolio-image {
-    border-radius: 5px;
-  }
-
   ::-webkit-scrollbar {
     width: 10px;
   }
