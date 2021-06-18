@@ -17,7 +17,6 @@ export type ScrollTopProps = {
 
 export type ButtonProps = {
   children: React.ReactNode;
-  size?: "small" | "normal";
 };
 
 export type TitlesProps = {
