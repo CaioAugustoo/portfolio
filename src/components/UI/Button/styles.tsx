@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 import { ButtonProps } from "types/types";
 
-export const Button = styled.button<Pick<ButtonProps, "size">>`
+export const Button = styled.button`
   ${({ theme, size }) => css`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.white};
-    padding: ${size === "normal" ? "12px 40px" : "9px 30px"};
+    padding: 12px 40px;
     border-radius: 5px;
     border: none;
     font-family: ${theme.font.family};
