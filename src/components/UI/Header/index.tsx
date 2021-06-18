@@ -28,7 +28,7 @@ const Header = () => {
           >
             <img
               src="/img/logo.svg"
-              alt="Logo com as inicias 'C A'"
+              alt="Logo with initials 'C A'"
               width={35}
               height={37}
             />
