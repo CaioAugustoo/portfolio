@@ -12,7 +12,8 @@ export type ImageProps = {
 };
 
 export type ButtonProps = {
-  children?: React.ReactNode;
+  children: React.ReactNode;
+  size?: "small" | "normal";
 };
 
 export type TitlesProps = {

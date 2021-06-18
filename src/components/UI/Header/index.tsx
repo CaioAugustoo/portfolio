@@ -3,10 +3,12 @@ import * as S from "./styles";
 
 import { Container } from "styles/globals";
 import { useEffect, useState } from "react";
+import Button from "../Button";
+
+const DURATION = 1000;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const duration = 1000;
 
   useEffect(() => {
     isMenuOpen
@@ -22,7 +24,7 @@ const Header = () => {
             to="home"
             spy={false}
             smooth="easeInOutQuart"
-            duration={duration}
+            duration={DURATION}
           >
             <img
               src="/img/logo.svg"
@@ -38,7 +40,7 @@ const Header = () => {
                 <Link
                   to="about"
                   smooth="easeInOutQuart"
-                  duration={duration}
+                  duration={DURATION}
                   activeClass="active"
                 >
                   About
@@ -48,14 +50,18 @@ const Header = () => {
                 <Link
                   to="portfolio"
                   smooth="easeInOutQuart"
-                  duration={duration}
+                  duration={DURATION}
                   activeClass="active"
                 >
                   Portfolio
                 </Link>
               </S.NavItem>
               <S.NavItem>
-                <a href="https://caio-blog.vercel.app/" target="_blank" rel="noopener">
+                <a
+                  href="https://caio-blog.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Blog
                 </a>
               </S.NavItem>
@@ -63,18 +69,22 @@ const Header = () => {
                 <Link
                   to="contact"
                   smooth="easeInOutQuart"
-                  duration={duration}
+                  duration={DURATION}
                   activeClass="active"
                 >
                   Contact
                 </Link>
+              </S.NavItem>
+
+              <S.NavItem title="Download Curriculum">
+                <Button size="small">CV</Button>
               </S.NavItem>
             </S.NavItens>
           </S.Nav>
 
           <S.HambIcon
             className={isMenuOpen ? "menu_active" : ""}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen((prev) => !prev)}
           />
         </S.ItemsWrapper>
         <S.MobileWrapper
@@ -88,7 +98,7 @@ const Header = () => {
                 to="about"
                 spy={true}
                 smooth="easeInOutQuart"
-                duration={duration}
+                duration={DURATION}
               >
                 About
               </Link>
@@ -99,13 +109,17 @@ const Header = () => {
                 to="portfolio"
                 spy={true}
                 smooth="easeInOutQuart"
-                duration={duration}
+                duration={DURATION}
               >
                 Portfolio
               </Link>
             </S.MobileItem>
             <S.MobileItem>
-              <a href="https://caio-blog.vercel.app/" target="_blank" rel="noopener">
+              <a
+                href="https://caio-blog.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
                 Blog
               </a>
             </S.MobileItem>
@@ -115,10 +129,14 @@ const Header = () => {
                 to="contact"
                 spy={true}
                 smooth="easeInOutQuart"
-                duration={duration}
+                duration={DURATION}
               >
                 Contact
               </Link>
+            </S.MobileItem>
+
+            <S.MobileItem>
+              <Button size="small">CV</Button>
             </S.MobileItem>
           </S.MobileItems>
         </S.MobileWrapper>

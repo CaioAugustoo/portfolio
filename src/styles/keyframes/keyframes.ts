@@ -9,7 +9,7 @@ export const shakeHands = keyframes`
   50% { transform: rotate(10.0deg) }
   60% { transform: rotate( 0.0deg) }
   100% { transform: rotate( 0.0deg) }
-`
+`;
 
 export const fromBottom = keyframes`
   0% {
@@ -21,7 +21,6 @@ export const fromBottom = keyframes`
     opacity: 1;
   }
 `;
-
 
 export const mobileItens = keyframes`
   0% {

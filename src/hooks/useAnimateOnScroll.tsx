@@ -6,9 +6,9 @@ const useAnimateOnScroll = (threshold = 0.1) => {
   useEffect(() => {
     function handleMutation([entry]: IntersectionObserverEntry[]) {
       if (entry.isIntersecting) {
-        elementRef.current.classList.add('active');
+        elementRef.current.classList.add("active");
       } else {
-        elementRef.current.classList.remove('active');
+        elementRef.current.classList.remove("active");
       }
     }
     const options = {
@@ -25,7 +25,7 @@ const useAnimateOnScroll = (threshold = 0.1) => {
     };
   }, []);
 
-  return elementRef
-}
+  return elementRef;
+};
 
-export default useAnimateOnScroll
+export default useAnimateOnScroll;

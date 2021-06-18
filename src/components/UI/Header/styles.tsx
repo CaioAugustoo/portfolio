@@ -1,9 +1,6 @@
 import styled, { css } from "styled-components";
 
-import {
-  fromBottom,
-  mobileItens,
-} from "styles/keyframes/keyframes";
+import { fromBottom, mobileItens } from "styles/keyframes/keyframes";
 
 export const Header = styled.header`
   ${({ theme }) => css`
@@ -25,7 +22,7 @@ export const Header = styled.header`
       cursor: pointer;
     }
 
-    @media(max-width: ${theme.media.md}) {
+    @media (max-width: ${theme.media.md}) {
       height: 6.5rem;
       opacity: 1;
     }
@@ -34,7 +31,7 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
   ${({ theme }) => css`
-    @media(max-width: ${theme.media.sm}) {
+    @media (max-width: ${theme.media.sm}) {
       display: none;
     }
   `}
@@ -66,26 +63,27 @@ export const NavItem = styled.li`
       transition: all 0.2s ease;
       color: ${theme.colors.white};
 
-        &::after {
-          transition: all .3s ease;
-          content: '';
-          display: block;
-          position: absolute;
-          height: 4px;
-          width: 0%;
-          background-color: ${theme.colors.secondary};
-          bottom: -27px;
+      &::after {
+        transition: all 0.3s ease;
+        content: "";
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 0%;
+        background-color: ${theme.colors.secondary};
+        bottom: -27px;
 
-          @media(max-width: ${theme.media.md}) {
-            bottom: -20px;
-          }
+        @media (max-width: ${theme.media.md}) {
+          bottom: -20px;
         }
+      }
 
       &:hover {
         color: ${theme.colors.primary};
       }
 
-      &.active, &.active::after {
+      &.active,
+      &.active::after {
         width: 100%;
       }
     }
@@ -105,6 +103,10 @@ export const NavItem = styled.li`
     &:nth-child(4) {
       animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
       animation-delay: 0.5s;
+    }
+    &:nth-child(5) {
+      animation: ${fromBottom} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+      animation-delay: 0.6s;
     }
   `}
 `;
@@ -220,6 +222,11 @@ export const MobileWrapper = styled.div`
           animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
             both;
           animation-delay: 0.7s;
+        }
+        &:nth-child(5) {
+          animation: ${mobileItens} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+            both;
+          animation-delay: 0.8s;
         }
       }
     }

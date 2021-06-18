@@ -2,30 +2,42 @@ import styled, { css } from "styled-components";
 
 import { fromBottom, shakeHands } from "styles/keyframes/keyframes";
 
-export const HomeSection = styled.section`
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 0 2rem;
-  z-index: -1;
-
-  button {
-    animation: ${fromBottom} 0.85s ease;
-  }
-`;
-
-export const ItemsHomeWrapper = styled.div`
+export const Name = styled.h1`
   ${({ theme }) => css`
-    margin: 0 auto;
-    padding: 0 4rem;
+    font-size: ${theme.font.sizes.large};
+    line-height: 1.2;
+
+    margin: 10px auto 0px -3px;
+
+    @media (max-width: ${theme.media.md}) {
+      font-size: ${theme.font.sizes.smallx2};
+    }
 
     @media (max-width: ${theme.media.sm}) {
-      padding: 0 1.5rem;
+      font-size: ${theme.font.sizes.small};
+      line-height: 1.4;
+    }
+  `}
+`;
+
+export const About = styled.div`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xxsmallx2};
+    font-weight: ${theme.font.light};
+
+    margin: 20px auto 35px 0px;
+
+    em {
+      text-decoration: line-through;
+      font-style: normal;
+    }
+
+    @media (max-width: ${theme.media.md}) {
+      font-size: ${theme.font.sizes.xxsmall};
+    }
+
+    @media (max-width: ${theme.media.sm}) {
+      font-size: ${theme.font.sizes.xxxsmall};
     }
   `}
 `;
@@ -55,50 +67,47 @@ export const Welcome = styled.div`
     }
 
     display: flex;
-    animation: ${fromBottom} 0.5s ease;
   `}
 `;
 
-export const Name = styled.h1`
-  ${({ theme }) => css`
-    font-size: ${theme.font.sizes.large};
-    line-height: 1.2;
+export const HomeSection = styled.section`
+  height: 100vh;
+  width: 100%;
 
-    animation: ${fromBottom} 0.5s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-    margin: 10px auto 0px -3px;
+  padding: 0 2rem;
+  z-index: -1;
 
-    @media (max-width: ${theme.media.md}) {
-      font-size: ${theme.font.sizes.smallx2};
+  &.active {
+    ${Name} {
+      animation: ${fromBottom} 0.5s ease;
     }
 
-    @media (max-width: ${theme.media.sm}) {
-      font-size: ${theme.font.sizes.small};
-      line-height: 1.4;
+    ${Welcome} {
+      animation: ${fromBottom} 0.5s ease;
     }
-  `}
+
+    ${About} {
+      animation: ${fromBottom} 0.7s ease;
+    }
+
+    button {
+      animation: ${fromBottom} 0.85s ease;
+    }
+  }
 `;
 
-export const About = styled.div`
+export const ItemsHomeWrapper = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxsmallx2};
-    font-weight: ${theme.font.light};
-
-    animation: ${fromBottom} 0.7s ease;
-
-    margin: 20px auto 35px 0px;
-
-    em {
-      text-decoration: line-through;
-      font-style: normal;
-    }
-
-    @media (max-width: ${theme.media.md}) {
-      font-size: ${theme.font.sizes.xxsmall};
-    }
+    margin: 0 auto;
+    padding: 0 4rem;
 
     @media (max-width: ${theme.media.sm}) {
-      font-size: ${theme.font.sizes.xxxsmall};
+      padding: 0 1.5rem;
     }
   `}
 `;
