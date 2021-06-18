@@ -1,8 +1,16 @@
-import styled, { css } from "styled-components";
+import styled, { css, DefaultTheme } from "styled-components";
 import { ButtonProps } from "types/types";
 
-export const Button = styled.button<Pick<ButtonProps, "size">>`
-  ${({ theme, size }) => css`
+const buttonModifiers = {
+  isOutlined: (theme: DefaultTheme) => css`
+    background-color: transparent;
+    border: 1px solid ${theme.colors.primary};
+    color: ${theme.colors.white};
+  `,
+};
+
+export const Button = styled.button<Pick<ButtonProps, "size" | "isOutlined">>`
+  ${({ theme, size, isOutlined }) => css`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.white};
     padding: ${size === "normal" ? "12px 40px" : "9px 30px"};
@@ -13,6 +21,8 @@ export const Button = styled.button<Pick<ButtonProps, "size">>`
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s ease;
+
+    ${isOutlined && buttonModifiers.isOutlined(theme)}
 
     &:hover {
       background-color: ${theme.colors.secondary};

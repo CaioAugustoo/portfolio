@@ -14,6 +14,7 @@ export const ScrollTop = styled.button<ScrollTopProps>`
     transition: all 0.3s ease;
     transform: translateY(0);
     opacity: ${scrolled ? 1 : 0};
+    pointer-events: ${scrolled ? "all" : "none"};
 
     &:hover {
       background: ${theme.colors.primary};
