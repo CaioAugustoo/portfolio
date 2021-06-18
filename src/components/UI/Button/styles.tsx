@@ -1,19 +1,11 @@
 import styled, { css, DefaultTheme } from "styled-components";
 import { ButtonProps } from "types/types";
 
-const buttonModifiers = {
-  isOutlined: (theme: DefaultTheme) => css`
-    background-color: transparent;
-    border: 1px solid ${theme.colors.primary};
-    color: ${theme.colors.white};
-  `,
-};
-
-export const Button = styled.button<Pick<ButtonProps, "size" | "isOutlined">>`
-  ${({ theme, size, isOutlined }) => css`
+export const Button = styled.button`
+  ${({ theme }) => css`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.white};
-    padding: ${size === "normal" ? "12px 40px" : "9px 30px"};
+    padding: 12px 40px;
     border-radius: 5px;
     border: none;
     font-family: ${theme.font.family};
@@ -21,8 +13,6 @@ export const Button = styled.button<Pick<ButtonProps, "size" | "isOutlined">>`
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s ease;
-
-    ${isOutlined && buttonModifiers.isOutlined(theme)}
 
     &:hover {
       background-color: ${theme.colors.secondary};
