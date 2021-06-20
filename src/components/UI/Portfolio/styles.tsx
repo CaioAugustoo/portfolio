@@ -15,7 +15,7 @@ export const WorkItem = styled.div`
   ${({ theme }) => css`
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 6rem 0;
+    margin: 5rem 0 10rem 0;
     transform: translateY(100px);
     opacity: 0;
 
