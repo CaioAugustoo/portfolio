@@ -9,7 +9,7 @@ Este projeto consiste em mostrar meus recentes e futuros trabalhos realizados ao
 ## ✨ Demonstração
 
 Veja abaixo uma foto do projeto.
-[![Image from Gyazo](https://i.gyazo.com/f289efe4c5f076552eaf42b78f8fd838.png)](https://gyazo.com/f289efe4c5f076552eaf42b78f8fd838)
+[![Image from Gyazo](https://i.gyazo.com/4217391b928d696e36609e1f98dd3c23.png)](https://gyazo.com/4217391b928d696e36609e1f98dd3c23)
 
 Você pode conferir o resultado final em: https://caioohtml.com
 
@@ -21,13 +21,14 @@ Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos 
 
 - [React.js](https://pt-br.reactjs.org)
 - [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
 - [styled-components](https://styled-components.com/)
 - [GraphQL](https://graphql.org/)
 - [graphql-request](https://www.npmjs.com/package/graphql-request)
 - [GraphCMS](https://graphcms.com/)
 - [next-pwa](https://www.npmjs.com/package/next-pwa)
 - [Plop.js](https://plopjs.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Husky](https://www.npmjs.com/package/husky)
 
 ## ⚙️ Instalação
 
