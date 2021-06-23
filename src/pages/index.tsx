@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetStaticProps, GetStaticPaths } from "next";
 
 import HomePage from "Templates/Home";
 
