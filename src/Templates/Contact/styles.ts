@@ -33,7 +33,7 @@ export const Links = styled.div`
 
     ${ButtonStyles.Button} {
       margin: ${theme.spacings.small} 0;
-      animation: ${fromBottom} 0.7s forwards;
+      animation: ${fromBottom} 0.7s ease;
     }
   `}
 `;
