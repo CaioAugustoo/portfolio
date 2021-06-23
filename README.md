@@ -41,7 +41,7 @@ $ git clone https://github.com/CaioAugustoo/portfolio_nextjs
 # Entre no repositório
 $ cd portfolio_nextjs
 
-Instale as dependencias digitando no termimal:
+Instale as dependências digitando no termimal:
 $ yarn install
 
 Rode a aplicação no modo de desenvolvimento.
