@@ -9,6 +9,6 @@ export const Wrapper = styled.section`
   transition: all 0.3s ease;
 
   &.active > div > * {
-    animation: ${fromBottom} .5s forwards;
+    animation: ${fromBottom} 0.5s forwards;
   }
 `;

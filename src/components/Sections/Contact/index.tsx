@@ -19,11 +19,9 @@ const ContactSection = () => {
           <a href="mailto:caioamfr@gmail.com">caioamfr@gmail.com</a>
         </S.ContactMeText>
 
-        <Link href="/contact" passHref>
-          <a>
-            <Button>Contact</Button>
-          </a>
-        </Link>
+        <a href="https://linktr.ee/caioaugustoo" target="_blank">
+          <Button>Contact</Button>
+        </a>
       </Container>
     </S.ContactSection>
   );

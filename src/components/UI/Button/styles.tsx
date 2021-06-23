@@ -1,15 +1,7 @@
 import styled, { css } from "styled-components";
-import { ButtonProps } from "types/types";
 
-const buttonModifiers = {
-  fullWidth: () => css`
-    width: 100%;
-    padding: 15px 40px;
-  `,
-};
-
-export const Button = styled.button<Pick<ButtonProps, "fullWidth">>`
-  ${({ theme, fullWidth }) => css`
+export const Button = styled.button`
+  ${({ theme }) => css`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.white};
     padding: 12px 40px;
@@ -25,7 +17,5 @@ export const Button = styled.button<Pick<ButtonProps, "fullWidth">>`
       background-color: ${theme.colors.secondary};
       transform: translateY(-3px);
     }
-
-    ${fullWidth && buttonModifiers.fullWidth()}
   `}
 `;
