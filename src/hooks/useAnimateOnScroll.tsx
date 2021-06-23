@@ -20,9 +20,7 @@ const useAnimateOnScroll = (threshold = 0.1) => {
     const observer = new IntersectionObserver(handleMutation, options);
     observer.observe(elementRef.current);
 
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   return elementRef;

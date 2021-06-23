@@ -17,6 +17,7 @@ export type ScrollTopProps = {
 
 export type ButtonProps = {
   children: React.ReactNode;
+  fullWidth?: boolean;
 };
 
 export type TitlesProps = {

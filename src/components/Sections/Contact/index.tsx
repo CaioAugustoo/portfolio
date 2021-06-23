@@ -1,6 +1,8 @@
 import Title from "components/UI/Title";
 import Button from "components/UI/Button";
 
+import Link from "next/link";
+
 import * as S from "./styles";
 
 import { Container } from "styles/globals";
@@ -17,9 +19,11 @@ const ContactSection = () => {
           <a href="mailto:caioamfr@gmail.com">caioamfr@gmail.com</a>
         </S.ContactMeText>
 
-        <a href="https://linktr.ee/caioaugustoo" target="_blank" rel="noopener">
-          <Button>Contact</Button>
-        </a>
+        <Link href="/contact" passHref>
+          <a>
+            <Button>Contact</Button>
+          </a>
+        </Link>
       </Container>
     </S.ContactSection>
   );
