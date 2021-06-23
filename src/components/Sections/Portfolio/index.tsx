@@ -14,6 +14,13 @@ const PortfolioSection = ({ data }: PortfolioDataProps) => {
     <S.Wrapper id="portfolio" ref={elementRef}>
       <Title>Portfolio</Title>
       <PortfolioItems projects={data} />
+      <S.ReposLink
+        href="https://github.com/CaioAugustoo"
+        target="_blank"
+        title="Visit my Github to see more projects"
+      >
+        Repositories in Github
+      </S.ReposLink>
     </S.Wrapper>
   );
 };
