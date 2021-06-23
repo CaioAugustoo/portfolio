@@ -2,6 +2,7 @@ import Button from "components/UI/Button";
 import socials from "./links.json";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import * as S from "./styles";
 
@@ -9,7 +10,12 @@ const ContactPage = () => {
   return (
     <S.Wrapper>
       <S.Person>
-        <img src="/img/me.png" alt="A man with glasses" width="100" />
+        <Image
+          src="/img/me.png"
+          alt="A man with glasses"
+          width={100}
+          height={100}
+        />
         <h2>Caio Augusto</h2>
       </S.Person>
 
