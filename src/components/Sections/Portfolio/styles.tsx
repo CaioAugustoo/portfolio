@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { fromBottom } from "styles/keyframes/keyframes";
 
 export const Wrapper = styled.section`
