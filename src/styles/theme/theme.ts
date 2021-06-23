@@ -10,6 +10,11 @@ export default {
     md: "990px",
     lg: "1250px",
   },
+  spacings: {
+    small: "1rem",
+    medium: "2.5rem",
+    large: "4.5rem",
+  },
   font: {
     family: "Poppins, sans-serif",
     light: 300,
