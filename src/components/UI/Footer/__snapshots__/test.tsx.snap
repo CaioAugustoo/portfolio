@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render correctly 1`] = `
+.c0 {
+  padding: 30px 0px;
+  text-align: center;
+  background-color: #0b0e18;
+  margin: 15rem auto 0 auto;
+}
+
+.c1 a {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 li {
+  margin: 10px;
+}
+
+.c3 {
+  font-size: 1.4rem;
+}
+
+<footer
+  class="c0"
+>
+  <nav
+    class="c1"
+  >
+    <ul
+      class="c2"
+    >
+      <li>
+        <a>
+          About
+        </a>
+      </li>
+      <li>
+        <a>
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://caio-blog.vercel.app/"
+          rel="noopener"
+          target="_blank"
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <p
+    class="c3"
+  >
+    © 
+    2021
+     - Caio Augusto
+  </p>
+</footer>
+`;
