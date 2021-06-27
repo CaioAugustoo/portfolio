@@ -8,10 +8,9 @@ export const Title = styled.h2`
     position: relative;
     opacity: 0;
 
-
     &:before {
-      transition: all .8s ease;
-      content: '';
+      transition: all 0.8s ease;
+      content: "";
       display: block;
       width: 0px;
       height: 18px;
@@ -22,9 +21,8 @@ export const Title = styled.h2`
       border-radius: 1px;
     }
 
-
     &.active {
-      animation: ${fromBottom} .5s backwards;
+      animation: ${fromBottom} 0.5s backwards;
       opacity: 1;
 
       &:before {
@@ -32,7 +30,7 @@ export const Title = styled.h2`
       }
     }
 
-    @media(max-width: ${theme.media.md}) {
+    @media (max-width: ${theme.media.md}) {
       font-size: ${theme.font.sizes.small};
 
       &:before {
