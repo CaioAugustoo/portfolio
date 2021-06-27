@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScrollTop /> should render correctly 1`] = `
+.c0 {
+  background: #7962ff;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 100px;
+  padding: 0.9rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c0:hover {
+  background: #4C30F5;
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+<button
+  class="c0"
+>
+  <a>
+    <img
+      alt="Icone para voltar ao topo da imagem"
+      src="/img/back_top.svg"
+    />
+  </a>
+</button>
+`;
