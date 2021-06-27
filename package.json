@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "deploy": "yarn build && next export",
-    "generate": "yarn plop  --plopfile ./generators/plopfile.js"
+    "generate": "yarn plop  --plopfile ./generators/plopfile.js",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
   },
   "husky": {
     "hooks": {
@@ -27,20 +29,24 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-typescript": "^7.12.13",
-    "@types/jest": "^26.0.21",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^26.0.23",
     "@types/node": "^15.12.4",
     "@types/react": "^17.0.11",
     "@types/react-scroll": "^1.8.2",
     "@types/styled-components": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.28.0",
-    "babel-loader": "^8.2.1",
+    "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
+    "jest": "^27.0.5",
+    "jest-styled-components": "^7.0.4",
     "lint-staged": "^11.0.0",
     "plop": "^2.7.4",
     "react-is": "^17.0.2",

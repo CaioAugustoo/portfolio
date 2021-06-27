@@ -21,7 +21,6 @@ export type ButtonProps = {
 
 export type TitlesProps = {
   children: string;
-  scrollPercentage?: number;
 };
 
 export type IntersectionObserverEntry = {
