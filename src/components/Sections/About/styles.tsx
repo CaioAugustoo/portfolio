@@ -34,9 +34,11 @@ export const AboutTexts = styled.div`
 
     a {
       color: ${theme.colors.secondary};
+      text-decoration: underline;
+      transition: all 0.2s;
 
       &:hover {
-        text-decoration: underline;
+        color: ${theme.colors.white};
       }
     }
 
