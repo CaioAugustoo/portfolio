@@ -12,6 +12,35 @@ ${({ theme }) => css`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("/fonts/poppins-v15-latin-300.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+      url("/fonts/poppins-v15-latin-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""), url("/fonts/poppins-v15-latin-500.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("/fonts/poppins-v15-latin-700.woff2") format("woff2");
+  }
+
   :root {
     font-size: 62.5%;
   }
@@ -34,16 +63,16 @@ ${({ theme }) => css`
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #10121D;
+    background: #10121d;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #1D2132;
+    background: #1d2132;
     border-radius: 10px;
   }
 
   ::selection {
-    background-color: #1D2132;
+    background-color: #1d2132;
   }
 `}
 `;
