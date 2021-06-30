@@ -20,7 +20,7 @@ export const AboutSection = styled.section`
 
 export const AboutTexts = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xsmall};
+    font-size: ${theme.font.sizes.xxsmallx2};
     font-weight: ${theme.font.light};
 
     p {
