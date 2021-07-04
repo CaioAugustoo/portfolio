@@ -60,7 +60,7 @@ const Header = () => {
                 <a
                   href="https://caio-blog.vercel.app/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Blog
                 </a>
@@ -86,7 +86,6 @@ const Header = () => {
         <S.MobileWrapper
           id="hmocIu"
           className={isMenuOpen ? "menu_active" : ""}
-          aria-hidden={!isMenuOpen}
         >
           <S.MobileItems>
             <S.MobileItem>
@@ -115,7 +114,7 @@ const Header = () => {
               <a
                 href="https://caio-blog.vercel.app/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Blog
               </a>

@@ -21,7 +21,12 @@ const PortfolioItems = ({ projects }: PortfolioItemProps) => {
                 </a>
               </S.WorkItemButton>
             </S.Wrapper>
-            <S.WorkItemImage src={image.url} alt={`Project ${title}`} />
+            <S.WorkItemImage
+              src={image.url}
+              width="640"
+              height="320"
+              alt={`Project ${title}`}
+            />
           </S.WorkItem>
         ))}
       </div>

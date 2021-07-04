@@ -16,6 +16,7 @@ ${({ theme }) => css`
     font-family: "Poppins";
     font-style: normal;
     font-weight: 300;
+    font-display: swap;
     src: local(""), url("/fonts/poppins-v15-latin-300.woff2") format("woff2");
   }
 
@@ -23,6 +24,7 @@ ${({ theme }) => css`
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: local(""),
       url("/fonts/poppins-v15-latin-regular.woff2") format("woff2");
   }
@@ -31,6 +33,7 @@ ${({ theme }) => css`
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
     src: local(""), url("/fonts/poppins-v15-latin-500.woff2") format("woff2");
   }
 
@@ -38,6 +41,7 @@ ${({ theme }) => css`
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
     src: local(""), url("/fonts/poppins-v15-latin-700.woff2") format("woff2");
   }
 

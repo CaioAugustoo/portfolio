@@ -20,6 +20,8 @@ const ScrollTop = () => {
         <img
           src="/img/back_top.svg"
           alt="Icone para voltar ao topo da imagem"
+          width="32"
+          height="33"
         />
       </Link>
     </S.ScrollTop>

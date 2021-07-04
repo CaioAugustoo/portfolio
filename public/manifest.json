@@ -1,21 +1,50 @@
 {
   "name": "Caio Augusto | Front-end Developer",
   "short_name": "Caio Augusto",
+  "start_url": "/",
+  "background_color": "#0B0D17",
+  "theme_color": "#4C30F5",
+  "display": "fullscreen",
   "icons": [
+    {
+      "src": "/img/logo48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/img/logo72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/img/logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/img/logo144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
     {
       "src": "/img/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+      "src": "/img/logo256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/img/logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
       "src": "/img/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "background_color": "#ffff",
-  "description": "Portfolio where I show my projects",
-  "display": "fullscreen",
-  "start_url": "/",
-  "theme_color": "#fff"
+  ]
 }
