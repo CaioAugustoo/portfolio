@@ -1,23 +1,15 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import * as S from "./styles";
+import useScroll from "hooks/useScroll";
 
 import { Container } from "styles/globals";
-import { useEffect, useState } from "react";
+import * as S from "./styles";
 
 const DURATION = 1000;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handler = () => {
-      window.pageYOffset >= 200 ? setScrolled(true) : setScrolled(false);
-    };
-
-    window.addEventListener("scroll", handler);
-    return () => window.removeEventListener("scroll", handler);
-  }, []);
+  const { scrolled } = useScroll(200);
 
   useEffect(() => {
     isMenuOpen
@@ -48,6 +40,7 @@ const Header = () => {
               <S.NavItem>
                 <Link
                   to="about"
+                  spy={false}
                   smooth="easeInOutQuart"
                   duration={DURATION}
                   activeClass="active"
@@ -58,6 +51,7 @@ const Header = () => {
               <S.NavItem>
                 <Link
                   to="portfolio"
+                  spy={false}
                   smooth="easeInOutQuart"
                   duration={DURATION}
                   activeClass="active"
@@ -77,6 +71,7 @@ const Header = () => {
               <S.NavItem>
                 <Link
                   to="contact"
+                  spy={false}
                   smooth="easeInOutQuart"
                   duration={DURATION}
                   activeClass="active"
@@ -101,7 +96,7 @@ const Header = () => {
               <Link
                 onClick={() => setIsMenuOpen(false)}
                 to="about"
-                spy={true}
+                spy={false}
                 smooth="easeInOutQuart"
                 duration={DURATION}
               >
@@ -112,7 +107,7 @@ const Header = () => {
               <Link
                 onClick={() => setIsMenuOpen(false)}
                 to="portfolio"
-                spy={true}
+                spy={false}
                 smooth="easeInOutQuart"
                 duration={DURATION}
               >
@@ -132,7 +127,7 @@ const Header = () => {
               <Link
                 onClick={() => setIsMenuOpen(false)}
                 to="contact"
-                spy={true}
+                spy={false}
                 smooth="easeInOutQuart"
                 duration={DURATION}
               >

@@ -1,8 +1,6 @@
 import Title from "components/UI/Title";
 import Button from "components/UI/Button";
 
-import Link from "next/link";
-
 import * as S from "./styles";
 
 import { Container } from "styles/globals";
