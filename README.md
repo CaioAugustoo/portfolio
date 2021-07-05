@@ -36,10 +36,10 @@ Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
 # Clone o repositório em alguma pasta em sua máquina
-$ git clone https://github.com/CaioAugustoo/portfolio_nextjs
+$ git clone https://github.com/CaioAugustoo/portfolio.git
 
 # Entre no repositório
-$ cd portfolio_nextjs
+$ cd portfolio
 
 Instale as dependências digitando no termimal:
 $ yarn install
