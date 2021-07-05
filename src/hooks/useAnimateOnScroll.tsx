@@ -11,6 +11,7 @@ const useAnimateOnScroll = (threshold = 0.1) => {
         elementRef.current.classList.remove("active");
       }
     }
+
     const options = {
       root: null,
       rootMargin: "0px",

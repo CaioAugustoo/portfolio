@@ -1,9 +1,10 @@
 import Button from "components/UI/Button";
 
-import * as S from "./styles";
 import { Link } from "react-scroll";
 import { HomePageDataProps } from "types/types";
 import useAnimateOnScroll from "hooks/useAnimateOnScroll";
+
+import * as S from "./styles";
 
 const Home = ({ data }: HomePageDataProps) => {
   const elementRef = useAnimateOnScroll();

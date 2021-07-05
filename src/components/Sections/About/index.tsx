@@ -1,9 +1,9 @@
-import { Container } from "styles/globals";
-import * as S from "./styles";
-
 import Title from "components/UI/Title";
 import useAnimateOnScroll from "hooks/useAnimateOnScroll";
 import { AboutPageDataProps } from "types/types";
+
+import { Container } from "styles/globals";
+import * as S from "./styles";
 
 const AboutSection = ({ data }: AboutPageDataProps) => {
   const elementRef = useAnimateOnScroll();

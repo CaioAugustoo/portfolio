@@ -32,7 +32,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           content="#4C30F5;
 "
         />
-        <meta name="background-color" content="#0B0D17" />
+        <meta name="background-color" content="#040413" />
         <meta
           property="og:description"
           content="Front-end Developer & UI/UX Designer"

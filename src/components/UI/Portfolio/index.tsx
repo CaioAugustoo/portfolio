@@ -1,6 +1,6 @@
-import * as S from "./styles";
-
 import { PortfolioItemProps } from "types/types";
+
+import * as S from "./styles";
 
 const PortfolioItems = ({ projects }: PortfolioItemProps) => {
   return (
