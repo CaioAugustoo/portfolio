@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 export const Wrapper = styled.footer`
   padding: 30px 0px;
   text-align: center;
-  background-color: #0b0e18;
   margin: 15rem auto 0 auto;
 `;
 

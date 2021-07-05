@@ -3,12 +3,21 @@ import * as S from "./styles";
 
 import { Container } from "styles/globals";
 import { useEffect, useState } from "react";
-import Button from "../Button";
 
 const DURATION = 1000;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+      window.pageYOffset >= 200 ? setScrolled(true) : setScrolled(false);
+    };
+
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   useEffect(() => {
     isMenuOpen
@@ -17,7 +26,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <S.Header>
+    <S.Header scrolled={scrolled}>
       <Container>
         <S.ItemsWrapper>
           <Link
