@@ -9,7 +9,7 @@ Este projeto consiste em mostrar meus recentes e futuros trabalhos realizados ao
 ## ✨ Demonstração
 
 Veja abaixo uma foto do projeto.
-[![Image from Gyazo](https://i.gyazo.com/4217391b928d696e36609e1f98dd3c23.png)](https://gyazo.com/4217391b928d696e36609e1f98dd3c23)
+[![Image from Gyazo](https://i.gyazo.com/d2b364075aee1e3ed903ce69e667eed6.png)](https://gyazo.com/d2b364075aee1e3ed903ce69e667eed6)
 
 Você pode conferir o resultado final em: https://caioohtml.com
 
