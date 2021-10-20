@@ -10,7 +10,6 @@ export const Header = styled.header<HeaderProps>`
   ${({ theme, scrolled }) => css`
     width: 100%;
     height: ${scrolled ? "7.5rem" : "9rem"};
-    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
 
     display: flex;
     align-items: center;
@@ -21,10 +20,9 @@ export const Header = styled.header<HeaderProps>`
     top: 0;
 
     transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 
-    backdrop-filter: blur(25px);
-
-    background: #040413e8;
+    background: ${scrolled ? "rgba(14, 16, 18, 0.75)" : theme.colors.mainbg};
     opacity: 0.99;
 
     img {
@@ -131,7 +129,7 @@ export const HambIcon = styled.div`
     width: 18px;
     height: 3px;
 
-    background: ${theme.colors.secondary};
+    background: ${theme.colors.white};
     z-index: 100;
 
     &:after {
@@ -146,7 +144,7 @@ export const HambIcon = styled.div`
 
       border-radius: 100px;
       transition: all 0.3s ease;
-      background: ${theme.colors.secondary};
+      background: ${theme.colors.white};
     }
     &:before {
       content: "";
@@ -160,7 +158,7 @@ export const HambIcon = styled.div`
       border-radius: 100px;
 
       transition: all 0.3s ease;
-      background: ${theme.colors.secondary};
+      background: ${theme.colors.white};
     }
     &.menu_active {
       background: transparent;

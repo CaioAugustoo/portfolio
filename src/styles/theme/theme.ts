@@ -1,8 +1,8 @@
 export default {
   colors: {
-    mainbg: "#040413",
-    primary: "#4C30F5",
-    secondary: "#7962ff",
+    mainbg: "#0e1012",
+    primary: "#007afc",
+    secondary: "#3195ff",
     white: "#ffffff",
   },
   media: {
