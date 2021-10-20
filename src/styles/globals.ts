@@ -67,16 +67,16 @@ ${({ theme }) => css`
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #10121d;
+    background: #0e1012;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #1d2132;
+    background: #303a45;
     border-radius: 10px;
   }
 
   ::selection {
-    background-color: #1d2132;
+    background-color: #303a45;
   }
 `}
 `;
