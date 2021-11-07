@@ -61,7 +61,7 @@ const Header = () => {
               </S.NavItem>
               <S.NavItem>
                 <a
-                  href="https://caio-blog.vercel.app/"
+                  href="https://blog.caioaugusto.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
