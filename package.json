@@ -22,7 +22,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scroll": "^1.8.1",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
