@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "graphql": "^15.6.1",
-    "graphql-request": "^3.4.0",
+    "graphql-request": "^3.6.1",
     "next": "^10.2.3",
     "next-pwa": "^5.1.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scroll": "^1.8.1",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -41,7 +41,7 @@
     "eslint-plugin-react": "^7.25.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^12.1.0",
     "plop": "^2.7.4",
     "react-is": "^17.0.2",
     "terser-webpack-plugin": "^5.1.2",
