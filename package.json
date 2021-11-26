@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-typescript": "^7.12.13",
-    "@types/jest": "^27.0.2",
+    "@types/jest": "^27.0.3",
     "@types/node": "^16.11.9",
     "@types/react": "^17.0.37",
     "@types/react-scroll": "^1.8.2",
