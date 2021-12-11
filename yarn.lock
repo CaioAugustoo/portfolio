@@ -3091,10 +3091,10 @@ graphql-request@^3.6.1:
     extract-files "^9.0.0"
     form-data "^3.0.0"
 
-graphql@^15.6.1:
-  version "15.6.1"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.6.1.tgz#9125bdf057553525da251e19e96dab3d3855ddfc"
-  integrity sha512-3i5lu0z6dRvJ48QP9kFxBkJ7h4Kso7PS8eahyTFz5Jm6CvQfLtNIE8LX9N6JLnXTuwR+sIYnXzaWp6anOg0QQw==
+graphql@^15.8.0:
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
+  integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
 
 handlebars@^4.4.3:
   version "4.7.7"
@@ -3768,10 +3768,10 @@ lilconfig@2.0.4:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.4.tgz#f4507d043d7058b380b6a8f5cb7bcd4b34cee082"
   integrity sha512-bfTIN7lEsiooCocSISTWXkiWJkRqtL9wYtYy+8EK3Y41qh3mpwPU0ycTOgjdY9ErwXCc8QyrQp82bdL0Xkm9yA==
 
-lint-staged@^12.1.0:
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.1.0.tgz#b06815793e28b856cbfd17be599c533388d960d5"
-  integrity sha512-h+fhsdYbt1fhItNj63UmpY5mkeF6z2YjXHtY0oQ4KdQc2kUvaPXOkWk0W9MhUlMdfb1G2SwYPhpcF17JIJDNWg==
+lint-staged@^12.1.2:
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.1.2.tgz#90c571927e1371fc133e720671dd7989eab53f74"
+  integrity sha512-bSMcQVqMW98HLLLR2c2tZ+vnDCnx4fd+0QJBQgN/4XkdspGRPc8DGp7UuOEBe1ApCfJ+wXXumYnJmU+wDo7j9A==
   dependencies:
     cli-truncate "^3.1.0"
     colorette "^2.0.16"
@@ -4545,10 +4545,10 @@ platform@1.3.6:
   resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
   integrity sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
 
-plop@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/plop/-/plop-3.0.2.tgz#babd613c0efc0a650b3325a9917fa325f088e044"
-  integrity sha512-jP9JPwISnwd+wQvVv4JbCWI1JoNvwSATneVvXtsuDf3dQdr4m1C/OEpPhHt6h0mB1i0CJ+nsVHqzcCNgxRvTEA==
+plop@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/plop/-/plop-3.0.4.tgz#625802a210678c721364840a63187be529399cd7"
+  integrity sha512-Qc7Mrj1uuMu6B8Qmj/2KyR2sjxRDZnbAcPf/udg5/24dYWL4lMBgUKGLs7wmatQ5AqKCMiZVbAlnEXHO2cil3Q==
   dependencies:
     "@types/liftoff" "^4.0.0"
     chalk "^5.0.0"
