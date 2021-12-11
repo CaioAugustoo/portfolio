@@ -15,7 +15,7 @@
     }
   },
   "dependencies": {
-    "graphql": "^15.6.1",
+    "graphql": "^15.8.0",
     "graphql-request": "^3.6.1",
     "next": "^10.2.3",
     "next-pwa": "^5.4.1",
