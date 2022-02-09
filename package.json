@@ -25,7 +25,7 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.17.2",
     "@babel/preset-typescript": "^7.12.13",
     "@types/jest": "^27.0.3",
     "@types/node": "^17.0.8",
