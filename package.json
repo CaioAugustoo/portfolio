@@ -21,7 +21,7 @@
     "next-pwa": "^5.4.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-scroll": "^1.8.1",
+    "react-scroll": "^1.8.5",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
