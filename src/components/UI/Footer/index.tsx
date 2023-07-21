@@ -1,3 +1,4 @@
+import { LinksEnum } from "config/links";
 import { Link } from "react-scroll";
 import * as S from "./styles";
 
@@ -31,11 +32,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <a
-              href="https://caio-blog.vercel.app/"
-              target="_blank"
-              rel="noopener"
-            >
+            <a href={LinksEnum.Blog} target="_blank" rel="noopener">
               Blog
             </a>
           </li>

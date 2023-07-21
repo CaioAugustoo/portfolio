@@ -1,8 +1,9 @@
-import Title from "components/UI/Title";
 import Button from "components/UI/Button";
+import Title from "components/UI/Title";
 
 import * as S from "./styles";
 
+import { LinksEnum } from "config/links";
 import { Container } from "styles/globals";
 
 const ContactSection = () => {
@@ -14,14 +15,10 @@ const ContactSection = () => {
         <S.ContactMeText>
           If you want to carry out a project or chat with me, do not hesitate to
           send me an email:{" "}
-          <a href="mailto:caioamfr@gmail.com">caioamfr@gmail.com</a>
+          <a href={`mailto:${LinksEnum.Email}`}>{LinksEnum.Email}</a>
         </S.ContactMeText>
 
-        <a
-          href="https://linktr.ee/caioaugustoo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={LinksEnum.Linktree} target="_blank" rel="noopener noreferrer">
           <Button>Contact</Button>
         </a>
       </Container>
