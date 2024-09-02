@@ -11,21 +11,21 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <link rel="icon" href="/img/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Caio Augusto | Front-end Developer</title>
-        <meta name="title" content="Caio Augusto | Front-end Developer" />
+        <title>Caio Augusto | Platform Engineer</title>
+        <meta name="title" content="Caio Augusto | Platform Engineer" />
         <meta
           name="description"
-          content="Front-end Developer & UI/UX Designer"
+          content="Platform Engineer"
         />
         <meta
           name="google-site-verification"
           content="u6Vdueaj4zUT5QC9kQe57N0BopUpzrTN9HxiHTOZIBo"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://caiohtml.com/" />
+        <meta property="og:url" content="https://caioaugusto.dev" />
         <meta
           property="og:title"
-          content="Caio Augusto | Front-end Developer"
+          content="Caio Augusto | Platform Engineer"
         />
         <meta
           name="theme-color"
@@ -35,21 +35,21 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="background-color" content="#040413" />
         <meta
           property="og:description"
-          content="Front-end Developer & UI/UX Designer"
+          content="Platform Engineer"
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://caiohtml.com/" />
+        <meta property="twitter:url" content="https://caioaugusto.dev" />
         <meta
           property="twitter:title"
-          content="Caio Augusto | Front-end Developer"
+          content="Caio Augusto | Platform Engineer"
         />
         <meta
           property="twitter:description"
-          content="Front-end Developer & UI/UX Designer"
+          content="Platform Engineer"
         />
         <meta
           name="keywords"
-          content="front-end, developer front-end, ui ux designer, graphic designer,
+          content="Platform Engineer, SRE, back-end front-end, developer front-end, ui ux designer, graphic designer,
             developer front-end freelancer, developer reactjs, developer javascript,
             javascript, react, reactjs, typescript, strapi, api, dev, nextjs, cypress, tests,
             caioaugusto, caioaugusto, caiohtml, caio augusto, freelancer, freela"
@@ -57,7 +57,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="robots" content="nofollow" />
         <meta name="revisit-after" content="1 day" />
         <meta property="”og:type”" content="”website”" />
-        <meta property="”og:locale”" content="”pt_BR”" />
+        <meta property="”og:locale”" content="”en_US”" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <Component {...pageProps} />
